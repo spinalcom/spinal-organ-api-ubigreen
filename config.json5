@@ -1,0 +1,26 @@
+{
+  spinalConnector: {
+    user: 168, // user id - process.env.SPINAL_USER_ID
+    password: '3HNvC6fftqHz', // user password - process.env.SPINAL_USER_ID
+    host: '127.0.0.1', // can be an ip address - process.env.SPINALHUB_IP
+    port: 7777, // port - process.env.SPINALHUB_PORT
+  },
+  file: {
+    // path to a digital twin in spinalhub filesystem || process.env.SPINAL_DTWIN_PATH
+    path: '/__users__/admin/Digital twin',
+    // link: 'batiment_b1.xlsx', //
+  },
+  organ: {
+    contextName: 'Network Ubigreen',
+    contextType: 'Network',
+    networkType: 'NetworkVirtual',
+    networkName: 'SmartDesk',
+  },
+  host: 'https://sd-api-preprod-cnp.ubigreen.com/',
+  virtualNetwork: 'smartdesk/',
+  auth_url: 'https://sd-api-preprod-cnp.ubigreen.com/smartdesk/authentication',
+  auth_url_socket: 'https://sd-api-preprod-cnp.ubigreen.com/smartdesk/signalr/hubs/authentication',
+  username: 'smartdesk-api',
+  password: 'ZpycfU7yUtX55$zb',
+  grant_type: 'password',
+}

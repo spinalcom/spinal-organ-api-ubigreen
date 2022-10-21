@@ -23,87 +23,170 @@
  */
 
 
-console.log("heloo");
+// import { SpinalGraph } from "spinal-env-viewer-graph-service";
+// import SpinalAPIMiddleware from "./spinalMiddelware";
+// import iconv from 'iconv-lite';
+// import axios from 'axios'
+// import request from 'request';
+// import { Token } from './token/token'
 
-// require("json5/lib/register");
+// const querystring = require('querystring');
 
-// import { spinalCore } from "spinal-core-connectorjs_type";
-
-// import {
-//   SpinalDisoverModel, SpinalListenerModel,
-//   SpinalOrganConfigModel, SpinalBacnetValueModel, SpinalPilotModel
-// } from "spinal-model-bacnet";
-
-// import {
-//   SpinalDiscoverCallback, SpinalListnerCallback,
-//   SpinalBacnetValueModelCallback, connectionErrorCallback,
-//   CreateOrganConfigFile, GetPm2Instance, SpinalPilotCallback
-// } from './utilities/Functions';
-
-
-// const pm2 = require("pm2");
 // const config = require("../config.json5");
 
-
-// const { protocol, host, port, userId, password, path, name } = config.spinalConnector;
-
-
-// const url = `${protocol}://${userId}:${password}@${host}:${port}/`;
-// const connect = spinalCore.connect(url);
+// var graph: SpinalGraph<any>
+// const spinalMiddelware = SpinalAPIMiddleware.getInstance();
 
 
 
-// CreateOrganConfigFile(connect, path, name).then((organModel: SpinalOrganConfigModel) => {
+import axios, { AxiosRequestConfig } from "axios";
 
-//   organModel.restart.bind(() => {
-//     GetPm2Instance(name).then(async (app: any) => {
-//       const restart = organModel.restart.get();
-//       console.log(app);
+const querystring = require('querystring');
 
-//       if (!restart) {
-//         listenLoadType(connect, organModel);
-//         return;
-//       }
+import { FileSystem, spinalCore } from "spinal-core-connectorjs_type";
+import { ForgeFileItem } from "spinal-lib-forgefile";
+import { SpinalContext, SpinalGraphService } from "spinal-env-viewer-graph-service"
 
-//       if (app) {
-//         console.log("restart organ", app.pm_id);
-//         organModel.restart.set(false)
+require("json5/lib/register");
+// get the config
+const config = require("../config.json5");
 
-//         pm2.restart(app.pm_id, (err) => {
-//           if (err) {
-//             console.error(err);
-//             return;
-//           }
-//           console.log("organ restarted with success !");
-//         })
-//       }
-
-//     })
-//   })
-// })
-
-// const listenLoadType = (connect, organModel) => {
-//   // return new Promise((resolve, reject) => {
-//   loadTypeInSpinalCore(connect, 'SpinalDisoverModel', (spinalDisoverModel: SpinalDisoverModel) => {
-//     SpinalDiscoverCallback(spinalDisoverModel, organModel)
-//   }, connectionErrorCallback);
-
-//   loadTypeInSpinalCore(connect, 'SpinalListenerModel', (spinalListenerModel: SpinalListenerModel) => {
-//     SpinalListnerCallback(spinalListenerModel, organModel);
-//   }, connectionErrorCallback);
-
-//   loadTypeInSpinalCore(connect, 'SpinalBacnetValueModel', (spinalBacnetValueModel: SpinalBacnetValueModel) => {
-//     SpinalBacnetValueModelCallback(spinalBacnetValueModel, organModel);
-//   }, connectionErrorCallback);
-
-//   loadTypeInSpinalCore(connect, 'SpinalPilotModel', (spinalPilotModel: SpinalPilotModel) => {
-//     SpinalPilotCallback(spinalPilotModel, organModel);
-//   }, connectionErrorCallback);
+import { InputData } from "./modules/InputData/InputData";
+import { NetworkProcess } from "./modules/NetworkProcess";
+//import { TokenManager } from "./modules/TokenManager";
+import { ApiConnector } from "./modules/ApiConnector";
+// //@ts-ignore
+// globalThis.$ = globalThis
+// import $ from "jquery";
+// //@ts-ignore
+// globalThis.window = globalThis
+// import "signalr";
 
 
-//   // });
-// }
+// connection string to connect to spinalhub
+const connectOpt = `http://${config.spinalConnector.user}:${config.spinalConnector.password
+  }@${config.spinalConnector.host}:${config.spinalConnector.port}/`;
 
-// const loadTypeInSpinalCore = (connect, type, callback, errorCallback) => {
-//   spinalCore.load_type(connect, type, callback, errorCallback);
-// }
+// initialize the connection
+const conn = spinalCore.connect(connectOpt);
+
+// get the Model from the spinalhub, "onLoadSuccess" and "onLoadError" are 2
+// callback function.
+spinalCore.load(conn, config.file.path, onLoadSuccess, onLoadError);
+
+// called network error or file not found
+function onLoadError() {
+  console.log(`File does not exist in location ${config.file.path}`);
+}
+
+// called if connected to the server and if the spinalhub sent us the Model
+async function onLoadSuccess(forgeFile: ForgeFileItem) {
+  console.log("Connected to the server and got the Entry Model");
+  const apiConnector = new ApiConnector();
+  const inputData = new InputData(apiConnector);
+  const networkProcess = new NetworkProcess(inputData);
+  // reset data for test purpose
+  // if (typeof forgeFile.graph !== 'undefined') forgeFile.rem_attr('graph');
+  networkProcess.init(forgeFile, config.organ).then(
+    async () => {
+      await buildBmsNetworks("SmartRoom", networkProcess, forgeFile)
+      await buildBmsNetworks("SmartFlow", networkProcess, forgeFile)
+    }
+  );
+}
+async function buildBmsNetworks(networkName: string, networkProcess: NetworkProcess, forgeFile: ForgeFileItem) {
+  const context: SpinalContext = await forgeFile.getContext(config.organ.contextName)
+  const childrenContext = await SpinalGraphService.getChildrenInContext(
+    context.getId().get(),
+    context.getId().get(),
+  );
+
+  let childFoundId: string = '';
+  for (const childContext of childrenContext) {
+    if (typeof childContext.networkName !== 'undefined' &&
+      childContext.networkName.get() === networkName) {
+      childFoundId = childContext.id.get();
+      break;
+    }
+  }
+  if (childFoundId === '') {
+    childFoundId = await networkProcess.nwService
+      .createNewBmsNetwork(
+        context.getId().get(),
+        config.organ.networkType,
+        networkName,
+      )
+      .then(res => <string>res.id.get());
+  }
+  return childFoundId;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // try {
+  //   const response = await axios.post(config.auth_url_socket,
+  //     querystring.stringify({ username: config.username, password: config.password, grant_type: config.grant_type }));
+
+
+
+  //   //Méthode appelée lors de la validation de l'authentification
+  //   var aggregateToHubServer = function () {
+  //     //Définition de l'URL hub serveur
+  //     $.connection.hub.url = "https://https://sd-api-preprod-cnp.ubigreen.com/smartdesk/signalr/hubs";
+  //     //Définition de la méthode du hub avec laquelle on souhaite échanger
+  //     var smartDeskHub = $.connection.smartDeskDeviceHub;
+  //     //Méthode cliente appelée par le serveur
+  //     smartDeskHub.client.updateDevicesStatus = function (devicesUpdated) {
+  //       // action réalisée quand un changement d’état pour un capteur de présence est détecté
+  //       // OU au chargement des derniers états des capteurs
+  //     };
+  //     function getLastDevicesStatus() {
+  //       //Appel de cette méthode sur le hub serveur pour connaître les derniers états des capteurs de
+  //       // présence(à appeler 1 fois maximum par jour, les derniers états sont ensuite réceptionnés en temps réel via le flux signalR)
+  //       console.log("getlaststausdevices");
+
+  //       smartDeskHub.server.getDevicesStatus();
+  //       console.log("*w*w*w*w*w*w*", smartDeskHub.server.getDevicesStatus());
+
+  //     };
+  //     //Ajout des logs de création de la connexion entre le client et le serveur
+  //     $.connection.hub.logging = true;
+  //     //Ajout du token et des références installations à la query string
+  //     $.connection.hub.qs = {
+  //       "access_token": "Bearer=" + response.data.access_token, "ref_installations":
+  //         "CNP-SIEGE"
+  //     };
+  //     //Start the connection
+  //     $.connection.hub.start()
+  //       .done(function () {
+  //         //Validation de la connexion et exécution de la méthode serveur
+  //         console.log("connection done");
+
+  //         getLastDevicesStatus();
+  //       })
+  //       .fail(function () {
+  //         //Connexion impossible
+  //         console.log("Could not Connect!");
+  //       });
+  //   }();
+
+
+  // } catch (error) {
+  //   console.error(error);
+  // }

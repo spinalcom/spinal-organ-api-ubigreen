@@ -35,13 +35,6 @@ import iconv from 'iconv-lite';
 import { ApiConnector } from '../ApiConnector';
 type onDataFunctionType = (obj: InputDataDevice) => void;
 
-// axios.interceptors.response.use(response => {
-//   let ctype = response.headers["content-type"];
-//   if (ctype.includes("charset=utf-16")) {
-//     response.data = iconv.decode(response.data, 'utf-16');
-//   } return response;
-// });
-
 /**
  * Simulation Class to generate data from an extrenal source
  *
@@ -76,7 +69,7 @@ class InputData {
     this.devices = [];
     this.onData = null;
     this.generateData();
-    setInterval(this.onDataInterval.bind(this), intervalTest);
+    // setInterval(this.onDataInterval.bind(this), intervalTest);
   }
 
 
@@ -85,13 +78,27 @@ class InputData {
    * @private
    * @memberof InputData
    */
-  private onDataInterval() {
+  /**
+   *
+   *
+   * @private
+   * @memberof InputData
+   */
+  public updateDevice(obj: InputDataDevice, value: number) {
+    //@ts-ignore
+    obj.children[0]?.currentValue = value
     if (this.onData !== null) {
-      this.onData(this.getAndUpdateOneRandomDevice());
+      this.onData(obj);
     }
   }
 
-
+  public getDeviceBySerial(serial: string): InputDataDevice {
+    for (const device of this.devices) {
+      if (device.serial === serial) {
+        return device;
+      }
+    }
+  }
 
   /**
     * @param {onDataFunctionType} onData
@@ -110,13 +117,16 @@ class InputData {
     try {
       let equipments = []
       const response = await this.apiConnector.get('https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices');
-      equipments = response.data.elements
-      for (let index = 2; index <= response.data.paging.pageCount; index++) {
-        const rep = await this.apiConnector.get(`https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices?pageNumber=${index}`);
-        equipments.concat(rep.data.elements)
+      equipments = response.data.elements;
+      if (response.data.paging.pageCount > 1) {
+        for (let index = 2; index <= response.data.paging.pageCount; index++) {
+          const rep = await this.apiConnector.get(`https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices?pageNumber=${index}`);
+          equipments.concat(rep.data.elements)
+        }
       }
+
       for (const equipment of equipments) {
-        const device = await this.generateDataDevice(equipment.serial);
+        const device = await this.generateDataDevice(equipment);
         this.devices.push(device);
       }
     } catch (error) {
@@ -130,7 +140,7 @@ class InputData {
  * @returns {InputDataDevice}
  * @memberof InputData
  */
-  private async generateDataDevice(serial: number): Promise<InputDataDevice> {
+  private async generateDataDevice(equipement): Promise<InputDataDevice> {
 
     // Function to create a device or Endpoint Group
     function createFunc(
@@ -138,63 +148,25 @@ class InputData {
       type: string,
       constructor: typeof InputDataDevice | typeof InputDataEndpointGroup,
     ): any {
-      return new constructor(str, type, str, '');
+      return new constructor(str, type, str, '', equipement.serial, equipement.refInstallation, equipement.customerReference, equipement.ubigreenReference, equipement.positionReference);
+      // return new constructor(str, type, str, '');
     }
     const device: InputDataDevice = createFunc(
-      `DEVICE-${serial}`,
+      `DEVICE-${equipement.serial}`,
       'device',
       InputDataDevice,
     );
-
-    // const occupationResponse = await this.apiConnector.get('https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/laststatus');
-    // for (const element of occupationResponse.data.elements) {
-    //   if (element.serial === serial) {
     const occupationEventType: InputDataEndpoint = new InputDataEndpoint(
-      `DEVICE-${serial} Occupation`,
-      3,
+      ` Occupation-DEVICE-${equipement.serial}`,
+      0,
       '',
       InputDataEndpointDataType.String,
       InputDataEndpointType.Other,
-      `DEVICE-${serial} Occupation`,
+      `DEVICE-${equipement.serial} Occupation`,
       '',
     );
     device.children.push(occupationEventType);
     return device;
-    //   }
-    // }
-  }
-
-  /**
-   * @private
-   * @param {(InputDataDevice)} device
-   * @memberof InputData
-   */
-  private async updateDevice(device: InputDataDevice): Promise<void> {
-    let id = device.id;
-    // const movementResponse = await this.apiConnector.get('https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/laststatus')
-    for (const child of device.children) {
-      if (child instanceof InputDataEndpoint) {
-        if (child.name === 'MovementEvent') {
-          child.currentValue = 9;
-        }
-      }
-    }
-    // console.log("lala", device);
-  }
-
-  /**
-   * @private
-   * @returns {InputDataDevice}
-   * @memberof InputData
-   */
-  private getAndUpdateOneRandomDevice(): InputDataDevice {
-    if (this.devices.length > 0) {
-      const idx = Math.floor(Math.random() * this.devices.length);
-      this.updateDevice(this.devices[idx]);
-      return this.devices[idx];
-    }
-    this.generateData();
-    return this.getAndUpdateOneRandomDevice();
   }
 
 }

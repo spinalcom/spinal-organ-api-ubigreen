@@ -13,6 +13,7 @@ class NetworkProcess {
         this.inputData.setOnDataCBFunc(this.updateData.bind(this));
     }
     updateData(obj) {
+        console.log("Update data device ! => ", obj.name);
         this.nwService.updateData.call(this.nwService, obj);
     }
 }

@@ -19,7 +19,8 @@
     ],
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "src/signalR/signalR.ts"
   ],
   "exclude": [
     "node_modules",

@@ -39,14 +39,12 @@
 
 
 
-import axios, { AxiosRequestConfig } from "axios";
 
-const querystring = require('querystring');
 
 import { FileSystem, spinalCore } from "spinal-core-connectorjs_type";
 import { ForgeFileItem } from "spinal-lib-forgefile";
 import { SpinalContext, SpinalGraphService } from "spinal-env-viewer-graph-service"
-
+import signalR from "./signalR/signalR"
 require("json5/lib/register");
 // get the config
 const config = require("../config.json5");
@@ -55,12 +53,7 @@ import { InputData } from "./modules/InputData/InputData";
 import { NetworkProcess } from "./modules/NetworkProcess";
 //import { TokenManager } from "./modules/TokenManager";
 import { ApiConnector } from "./modules/ApiConnector";
-// //@ts-ignore
-// globalThis.$ = globalThis
-// import $ from "jquery";
-// //@ts-ignore
-// globalThis.window = globalThis
-// import "signalr";
+
 
 
 // connection string to connect to spinalhub
@@ -85,14 +78,17 @@ async function onLoadSuccess(forgeFile: ForgeFileItem) {
   const apiConnector = new ApiConnector();
   const inputData = new InputData(apiConnector);
   const networkProcess = new NetworkProcess(inputData);
+
   // reset data for test purpose
-  // if (typeof forgeFile.graph !== 'undefined') forgeFile.rem_attr('graph');
+  if (typeof forgeFile.graph !== 'undefined') forgeFile.rem_attr('graph');
   networkProcess.init(forgeFile, config.organ).then(
     async () => {
       await buildBmsNetworks("SmartRoom", networkProcess, forgeFile)
       await buildBmsNetworks("SmartFlow", networkProcess, forgeFile)
     }
   );
+  await signalR(inputData);
+
 }
 async function buildBmsNetworks(networkName: string, networkProcess: NetworkProcess, forgeFile: ForgeFileItem) {
   const context: SpinalContext = await forgeFile.getContext(config.organ.contextName)
@@ -139,54 +135,3 @@ async function buildBmsNetworks(networkName: string, networkProcess: NetworkProc
 
 
 
- // try {
-  //   const response = await axios.post(config.auth_url_socket,
-  //     querystring.stringify({ username: config.username, password: config.password, grant_type: config.grant_type }));
-
-
-
-  //   //Méthode appelée lors de la validation de l'authentification
-  //   var aggregateToHubServer = function () {
-  //     //Définition de l'URL hub serveur
-  //     $.connection.hub.url = "https://https://sd-api-preprod-cnp.ubigreen.com/smartdesk/signalr/hubs";
-  //     //Définition de la méthode du hub avec laquelle on souhaite échanger
-  //     var smartDeskHub = $.connection.smartDeskDeviceHub;
-  //     //Méthode cliente appelée par le serveur
-  //     smartDeskHub.client.updateDevicesStatus = function (devicesUpdated) {
-  //       // action réalisée quand un changement d’état pour un capteur de présence est détecté
-  //       // OU au chargement des derniers états des capteurs
-  //     };
-  //     function getLastDevicesStatus() {
-  //       //Appel de cette méthode sur le hub serveur pour connaître les derniers états des capteurs de
-  //       // présence(à appeler 1 fois maximum par jour, les derniers états sont ensuite réceptionnés en temps réel via le flux signalR)
-  //       console.log("getlaststausdevices");
-
-  //       smartDeskHub.server.getDevicesStatus();
-  //       console.log("*w*w*w*w*w*w*", smartDeskHub.server.getDevicesStatus());
-
-  //     };
-  //     //Ajout des logs de création de la connexion entre le client et le serveur
-  //     $.connection.hub.logging = true;
-  //     //Ajout du token et des références installations à la query string
-  //     $.connection.hub.qs = {
-  //       "access_token": "Bearer=" + response.data.access_token, "ref_installations":
-  //         "CNP-SIEGE"
-  //     };
-  //     //Start the connection
-  //     $.connection.hub.start()
-  //       .done(function () {
-  //         //Validation de la connexion et exécution de la méthode serveur
-  //         console.log("connection done");
-
-  //         getLastDevicesStatus();
-  //       })
-  //       .fail(function () {
-  //         //Connexion impossible
-  //         console.log("Could not Connect!");
-  //       });
-  //   }();
-
-
-  // } catch (error) {
-  //   console.error(error);
-  // }

@@ -1,8 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const querystring = require('querystring');
 const spinal_core_connectorjs_type_1 = require("spinal-core-connectorjs_type");
 const spinal_env_viewer_graph_service_1 = require("spinal-env-viewer-graph-service");
+const signalR_1 = __importDefault(require("./signalR/signalR"));
 require("json5/lib/register");
 const config = require("../config.json5");
 const InputData_1 = require("./modules/InputData/InputData");
@@ -19,10 +22,13 @@ async function onLoadSuccess(forgeFile) {
     const apiConnector = new ApiConnector_1.ApiConnector();
     const inputData = new InputData_1.InputData(apiConnector);
     const networkProcess = new NetworkProcess_1.NetworkProcess(inputData);
+    if (typeof forgeFile.graph !== 'undefined')
+        forgeFile.rem_attr('graph');
     networkProcess.init(forgeFile, config.organ).then(async () => {
         await buildBmsNetworks("SmartRoom", networkProcess, forgeFile);
         await buildBmsNetworks("SmartFlow", networkProcess, forgeFile);
     });
+    await (0, signalR_1.default)(inputData);
 }
 async function buildBmsNetworks(networkName, networkProcess, forgeFile) {
     const context = await forgeFile.getContext(config.organ.contextName);

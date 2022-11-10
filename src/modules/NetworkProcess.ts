@@ -49,7 +49,6 @@ export class NetworkProcess {
     this.nwService = new NetworkService();
     this.nwService.setupDelay(60000);
   }
-
   /**
    *
    *
@@ -73,7 +72,7 @@ export class NetworkProcess {
    * @memberof NetworkProcess
    */
   updateData(obj: InputDataDevice) {
-    // console.log("Update data device ! => ", obj.name);
+    console.log("Update data device ! => ", obj.name);
     this.nwService.updateData.call(this.nwService, obj);
   }
 }

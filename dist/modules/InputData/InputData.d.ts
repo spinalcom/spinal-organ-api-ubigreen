@@ -6,11 +6,10 @@ declare class InputData {
     private devices;
     private apiConnector;
     constructor(apiConnector: ApiConnector);
-    private onDataInterval;
+    updateDevice(obj: InputDataDevice, value: number): void;
+    getDeviceBySerial(serial: string): InputDataDevice;
     setOnDataCBFunc(onData: onDataFunctionType): void;
     private generateData;
     private generateDataDevice;
-    private updateDevice;
-    private getAndUpdateOneRandomDevice;
 }
 export { InputData };

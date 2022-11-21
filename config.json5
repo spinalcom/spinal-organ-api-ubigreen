@@ -20,6 +20,7 @@
   virtualNetwork: 'smartdesk/',
   auth_url: 'https://sd-api-preprod-cnp.ubigreen.com/smartdesk/authentication',
   base_url: 'https://sd-api-preprod-cnp.ubigreen.com/smartdesk/signalr/hubs',
+  refDevices_url: '/smartdesk/api/installations/CNP-SIEGE/refdevices',
   auth_url_socket: '/authentication',
   username: 'smartdesk-api',
   password: 'ZpycfU7yUtX55$zb',

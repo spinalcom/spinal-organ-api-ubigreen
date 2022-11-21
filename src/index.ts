@@ -22,33 +22,13 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-
-// import { SpinalGraph } from "spinal-env-viewer-graph-service";
-// import SpinalAPIMiddleware from "./spinalMiddelware";
-// import iconv from 'iconv-lite';
-// import axios from 'axios'
-// import request from 'request';
-// import { Token } from './token/token'
-
-// const querystring = require('querystring');
-
-// const config = require("../config.json5");
-
-// var graph: SpinalGraph<any>
-// const spinalMiddelware = SpinalAPIMiddleware.getInstance();
-
-
-
-
-
 import { FileSystem, spinalCore } from "spinal-core-connectorjs_type";
 import { ForgeFileItem } from "spinal-lib-forgefile";
-import { SpinalContext, SpinalGraphService } from "spinal-env-viewer-graph-service"
 import signalR from "./signalR/signalR"
 require("json5/lib/register");
 // get the config
 const config = require("../config.json5");
-
+import buildBmsNetworks from './Utils/buildBmsNetworks'
 import { InputData } from "./modules/InputData/InputData";
 import { NetworkProcess } from "./modules/NetworkProcess";
 //import { TokenManager } from "./modules/TokenManager";
@@ -74,6 +54,7 @@ function onLoadError() {
 
 // called if connected to the server and if the spinalhub sent us the Model
 async function onLoadSuccess(forgeFile: ForgeFileItem) {
+
   console.log("Connected to the server and got the Entry Model");
   const apiConnector = new ApiConnector();
   const inputData = new InputData(apiConnector);
@@ -89,32 +70,6 @@ async function onLoadSuccess(forgeFile: ForgeFileItem) {
   );
   await signalR(inputData);
 
-}
-async function buildBmsNetworks(networkName: string, networkProcess: NetworkProcess, forgeFile: ForgeFileItem) {
-  const context: SpinalContext = await forgeFile.getContext(config.organ.contextName)
-  const childrenContext = await SpinalGraphService.getChildrenInContext(
-    context.getId().get(),
-    context.getId().get(),
-  );
-
-  let childFoundId: string = '';
-  for (const childContext of childrenContext) {
-    if (typeof childContext.networkName !== 'undefined' &&
-      childContext.networkName.get() === networkName) {
-      childFoundId = childContext.id.get();
-      break;
-    }
-  }
-  if (childFoundId === '') {
-    childFoundId = await networkProcess.nwService
-      .createNewBmsNetwork(
-        context.getId().get(),
-        config.organ.networkType,
-        networkName,
-      )
-      .then(res => <string>res.id.get());
-  }
-  return childFoundId;
 }
 
 

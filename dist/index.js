@@ -4,10 +4,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const spinal_core_connectorjs_type_1 = require("spinal-core-connectorjs_type");
-const spinal_env_viewer_graph_service_1 = require("spinal-env-viewer-graph-service");
 const signalR_1 = __importDefault(require("./signalR/signalR"));
 require("json5/lib/register");
 const config = require("../config.json5");
+const buildBmsNetworks_1 = __importDefault(require("./Utils/buildBmsNetworks"));
 const InputData_1 = require("./modules/InputData/InputData");
 const NetworkProcess_1 = require("./modules/NetworkProcess");
 const ApiConnector_1 = require("./modules/ApiConnector");
@@ -25,27 +25,9 @@ async function onLoadSuccess(forgeFile) {
     if (typeof forgeFile.graph !== 'undefined')
         forgeFile.rem_attr('graph');
     networkProcess.init(forgeFile, config.organ).then(async () => {
-        await buildBmsNetworks("SmartRoom", networkProcess, forgeFile);
-        await buildBmsNetworks("SmartFlow", networkProcess, forgeFile);
+        await (0, buildBmsNetworks_1.default)("SmartRoom", networkProcess, forgeFile);
+        await (0, buildBmsNetworks_1.default)("SmartFlow", networkProcess, forgeFile);
     });
     await (0, signalR_1.default)(inputData);
-}
-async function buildBmsNetworks(networkName, networkProcess, forgeFile) {
-    const context = await forgeFile.getContext(config.organ.contextName);
-    const childrenContext = await spinal_env_viewer_graph_service_1.SpinalGraphService.getChildrenInContext(context.getId().get(), context.getId().get());
-    let childFoundId = '';
-    for (const childContext of childrenContext) {
-        if (typeof childContext.networkName !== 'undefined' &&
-            childContext.networkName.get() === networkName) {
-            childFoundId = childContext.id.get();
-            break;
-        }
-    }
-    if (childFoundId === '') {
-        childFoundId = await networkProcess.nwService
-            .createNewBmsNetwork(context.getId().get(), config.organ.networkType, networkName)
-            .then(res => res.id.get());
-    }
-    return childFoundId;
 }
 //# sourceMappingURL=index.js.map

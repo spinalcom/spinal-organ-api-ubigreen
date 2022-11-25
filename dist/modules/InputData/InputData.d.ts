@@ -6,7 +6,7 @@ declare class InputData {
     private devices;
     private apiConnector;
     constructor(apiConnector: ApiConnector);
-    updateDevice(obj: InputDataDevice, value: number): void;
+    updateDevice(obj: InputDataDevice, value: number): Promise<void>;
     getDeviceBySerial(serial: string): InputDataDevice;
     setOnDataCBFunc(onData: onDataFunctionType): void;
     private generateData;

@@ -26,8 +26,9 @@ import { ForgeFileItem } from "spinal-lib-forgefile";
 import { InputData } from "./InputData/InputData";
 import { NetworkService } from "spinal-model-bmsnetwork";
 import { InputDataDevice } from "./InputData/InputDataModel/InputDataModel";
-
+import { serviceDocumentation } from "spinal-env-viewer-plugin-documentation-service"
 import { ConfigOrgan } from "../Utils/ConfigOrgan";
+import { SpinalGraphService } from "spinal-env-viewer-graph-service";
 
 /**
  *
@@ -38,7 +39,7 @@ import { ConfigOrgan } from "../Utils/ConfigOrgan";
 export class NetworkProcess {
   private inputData: InputData;
   public nwService: NetworkService;
-
+  public contextId: string;
   /**
    *Creates an instance of NetworkProcess.
    * @param {InputData} inputData
@@ -62,7 +63,45 @@ export class NetworkProcess {
     configOrgan: ConfigOrgan
   ): Promise<void> {
     const rep = await this.nwService.init(forgeFile, configOrgan);
+    this.contextId = rep.contextId;
     this.inputData.setOnDataCBFunc(this.updateData.bind(this));
+  }
+
+
+  public async updateAttr(dataDevice: InputDataDevice) {
+    let attrObj = {
+      serial: dataDevice.serial,
+      refInstallation: dataDevice.refInstallation,
+      customerReference: dataDevice.customerReference,
+      ubigreenReference: dataDevice.ubigreenReference,
+      positionReference: dataDevice.positionReference
+    }
+    const keys = Object.keys(attrObj);
+    const context = SpinalGraphService.getRealNode(this.contextId);
+    const nodes = await context.findInContext(context, (node, stop) => {
+      if (node.info.idNetwork?.get() === dataDevice.id) {
+        stop()
+        return true
+      }
+      return false
+    })
+    for (const node of nodes) {
+      const category = await serviceDocumentation.getCategoryByName(node, "default");
+      const attrs = await serviceDocumentation.getAttributesByCategory(node, category);
+      for (const key of keys) {
+        let found = false
+        for (const attr of attrs) {
+          if (key === attr.label.get()) {
+            found = true;
+            attr.value.set(attrObj[key])
+            break;
+          }
+        }
+        if (found === false) {
+          serviceDocumentation.addAttributeByCategory(node, category, key, attrObj[key])
+        }
+      }
+    }
   }
 
   /**
@@ -71,8 +110,11 @@ export class NetworkProcess {
    * @param {InputDataDevice} obj
    * @memberof NetworkProcess
    */
-  updateData(obj: InputDataDevice) {
+  async updateData(obj: InputDataDevice) {
     console.log("Update data device ! => ", obj.name);
-    this.nwService.updateData.call(this.nwService, obj);
+    await this.nwService.updateData.call(this.nwService, obj);
+    await this.updateAttr(obj);
   }
 }
+
+

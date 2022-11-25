@@ -8,7 +8,14 @@ class SpinalAPIMiddleware {
     constructor() {
         this.iteratorGraph = this.geneGraph();
         this.loadedPtr = new Map();
-        const connect_opt = `http://${config.spinalConnector.user}:${config.spinalConnector.password}@${config.spinalConnector.host}:${config.spinalConnector.port}/`;
+        const protocol = config.spinalConnector.protocol
+            ? config.spinalConnector.protocol
+            : 'http';
+        const host = config.spinalConnector.host +
+            (config.spinalConnector.port ? `:${config.spinalConnector.port}` : '');
+        const login = `${config.spinalConnector.user}:${config.spinalConnector.password}`;
+        const connect_opt = `${protocol}://${login}@${host}/`;
+        console.log(`start connect to hub: ${protocol}://${host}/`);
         this.conn = spinal_core_connectorjs_type_1.spinalCore.connect(connect_opt);
     }
     static getInstance() {

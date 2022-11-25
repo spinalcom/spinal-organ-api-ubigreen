@@ -24,7 +24,7 @@ async function onLoadSuccess(forgeFile) {
     const networkProcess = new NetworkProcess_1.NetworkProcess(inputData);
     if (typeof forgeFile.graph !== 'undefined')
         forgeFile.rem_attr('graph');
-    networkProcess.init(forgeFile, config.organ).then(async () => {
+    await networkProcess.init(forgeFile, config.organ).then(async () => {
         await (0, buildBmsNetworks_1.default)("SmartRoom", networkProcess, forgeFile);
         await (0, buildBmsNetworks_1.default)("SmartFlow", networkProcess, forgeFile);
     });

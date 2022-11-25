@@ -54,22 +54,19 @@ function onLoadError() {
 
 // called if connected to the server and if the spinalhub sent us the Model
 async function onLoadSuccess(forgeFile: ForgeFileItem) {
-
   console.log("Connected to the server and got the Entry Model");
   const apiConnector = new ApiConnector();
   const inputData = new InputData(apiConnector);
   const networkProcess = new NetworkProcess(inputData);
-
   // reset data for test purpose
   if (typeof forgeFile.graph !== 'undefined') forgeFile.rem_attr('graph');
-  networkProcess.init(forgeFile, config.organ).then(
+  await networkProcess.init(forgeFile, config.organ).then(
     async () => {
       await buildBmsNetworks("SmartRoom", networkProcess, forgeFile)
       await buildBmsNetworks("SmartFlow", networkProcess, forgeFile)
     }
   );
   await signalR(inputData);
-
 }
 
 

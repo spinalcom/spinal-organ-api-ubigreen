@@ -1,7 +1,8 @@
 {
   spinalConnector: {
+    protocol: 'http', // protocol
     user: 168, // user id - process.env.SPINAL_USER_ID
-    password: '3HNvC6fftqHz', // user password - process.env.SPINAL_USER_ID
+    password: '3HNvC6fftqHz', // user password - process.env.SPINAL_PASSWORD
     host: '127.0.0.1', // can be an ip address - process.env.SPINALHUB_IP
     port: 7777, // port - process.env.SPINALHUB_PORT
   },
@@ -16,14 +17,14 @@
     networkType: 'NetworkVirtual',
     networkName: 'SmartDesk',
   },
-  host: 'https://sd-api-preprod-cnp.ubigreen.com/',
+  host: 'https://sd-api-cnp.ubigreen.com/',
   virtualNetwork: 'smartdesk/',
-  auth_url: 'https://sd-api-preprod-cnp.ubigreen.com/smartdesk/authentication',
-  base_url: 'https://sd-api-preprod-cnp.ubigreen.com/smartdesk/signalr/hubs',
+  auth_url: 'https://sd-api-cnp.ubigreen.com/smartdesk/authentication',
+  base_url: 'https://sd-api-cnp.ubigreen.com/smartdesk/signalr/hubs',
   refDevices_url: '/smartdesk/api/installations/CNP-SIEGE/refdevices',
   auth_url_socket: '/authentication',
   username: 'smartdesk-api',
-  password: 'ZpycfU7yUtX55$zb',
+  password: '5Xk!LL@P648Sd86H',
   grant_type: 'password',
   ref_installations: 'CNP-SIEGE',
   hub_name: 'smartDeskDeviceHub',

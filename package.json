@@ -41,6 +41,7 @@
     "socket.io": "^3.1.1",
     "spinal-core-connectorjs_type": "git+https://github.com/spinalcom/spinal-core-connectorjs_type.git",
     "spinal-env-viewer-graph-service": "git+https://github.com/spinalcom/Spinal-Graph-Service.git",
+    "spinal-env-viewer-plugin-documentation-service": "git+https://github.com/spinalcom/spinal-env-viewer-plugin-documentation-service.git",
     "spinal-model-bacnet": "git+https://github.com/spinalcom/spinal-model-bacnet.git",
     "spinal-model-bmsnetwork": "git+https://github.com/spinalcom/spinal-model-bmsnetwork.git",
     "spinal-model-graph": "git+https://github.com/spinalcom/spinal-model-graph.git",

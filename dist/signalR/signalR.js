@@ -54,7 +54,6 @@ async function signalR(inputData) {
             client.connection.hub.on(hub_name, function_name_server, (messages) => {
                 for (const message of messages) {
                     const device = inputData.getDeviceBySerial(message.serial);
-                    console.log("***********1 appel device changé", device);
                     if (device !== undefined) {
                         inputData.updateDevice(device, message.value);
                     }

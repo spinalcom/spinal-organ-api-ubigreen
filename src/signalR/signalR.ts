@@ -89,8 +89,9 @@ export default async function signalR(inputData) {
       client.connection.hub.on(hub_name, function_name_server, (messages) => {
         for (const message of messages) {
           const device = inputData.getDeviceBySerial(message.serial);
-          console.log("***********1 appel device changé", device);
+          // console.log("***********1 appel device changé", device.serial);
           if (device !== undefined) {
+
             inputData.updateDevice(device, message.value);
           } else {
             console.log("unknown Serial Device");

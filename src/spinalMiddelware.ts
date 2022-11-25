@@ -48,12 +48,29 @@ class SpinalAPIMiddleware {
   }
   constructor() {
     this.loadedPtr = new Map();
+
     // connection string to connect to spinalhub
-    const connect_opt = `http://${config.spinalConnector.user}:${config.spinalConnector.password}@${config.spinalConnector.host}:${config.spinalConnector.port}/`;
-    // FileSystem._disp = true
+    const protocol = config.spinalConnector.protocol
+      ? config.spinalConnector.protocol
+      : 'http';
+    const host =
+      config.spinalConnector.host +
+      (config.spinalConnector.port ? `:${config.spinalConnector.port}` : '');
+    const login = `${config.spinalConnector.user}:${config.spinalConnector.password}`;
+    const connect_opt = `${protocol}://${login}@${host}/`;
+    console.log(`start connect to hub: ${protocol}://${host}/`);
 
     // initialize the connection
     this.conn = spinalCore.connect(connect_opt);
+    // get the Model from the spinalhub, "onLoadSuccess" and "onLoadError" are 2
+    // callback function.
+
+
+    // connection string to connect to spinalhub
+    // const connect_opt = `http://${config.spinalConnector.user}:${config.spinalConnector.password}@${config.spinalConnector.host}:${config.spinalConnector.port}/`;
+    // FileSystem._disp = true
+    // initialize the connection
+    // this.conn = spinalCore.connect(connect_opt);
     // get the Model from the spinalhub, "onLoadSuccess" and "onLoadError" are 2
     // callback function.
   }

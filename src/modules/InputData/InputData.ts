@@ -84,13 +84,14 @@ class InputData {
    * @private
    * @memberof InputData
    */
-  public updateDevice(obj: InputDataDevice, value: number) {
+  public async updateDevice(obj: InputDataDevice, value: number) {
     //@ts-ignore
     obj.children[0]?.currentValue = value
     if (this.onData !== null) {
-      this.onData(obj);
+      await this.onData(obj);
     }
   }
+
 
   public getDeviceBySerial(serial: string): InputDataDevice {
     for (const device of this.devices) {
@@ -116,15 +117,14 @@ class InputData {
   private async generateData() {
     try {
       let equipments = []
-      const response = await this.apiConnector.get('https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices');
+      const response = await this.apiConnector.get('https://sd-api-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices');
       equipments = response.data.elements;
-      if (response.data.paging.pageCount > 1) {
-        for (let index = 2; index <= response.data.paging.pageCount; index++) {
-          const rep = await this.apiConnector.get(`https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices?pageNumber=${index}`);
-          equipments.concat(rep.data.elements)
-        }
-      }
-
+      // if (response.data.paging.pageCount > 1) {
+      //   for (let index = 2; index <= response.data.paging.pageCount; index++) {
+      //     const rep = await this.apiConnector.get(`https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices?pageNumber=${index}`);
+      //     equipments.concat(rep.data.elements)
+      //   }
+      // }
       for (const equipment of equipments) {
         const device = await this.generateDataDevice(equipment);
         this.devices.push(device);
@@ -141,12 +141,11 @@ class InputData {
  * @memberof InputData
  */
   private async generateDataDevice(equipement): Promise<InputDataDevice> {
-
     // Function to create a device or Endpoint Group
     function createFunc(
       str: string,
       type: string,
-      constructor: typeof InputDataDevice | typeof InputDataEndpointGroup,
+      constructor: typeof InputDataDevice
     ): any {
       return new constructor(str, type, str, '', equipement.serial, equipement.refInstallation, equipement.customerReference, equipement.ubigreenReference, equipement.positionReference);
       // return new constructor(str, type, str, '');

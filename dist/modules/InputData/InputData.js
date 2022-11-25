@@ -10,11 +10,11 @@ class InputData {
         this.onData = null;
         this.generateData();
     }
-    updateDevice(obj, value) {
+    async updateDevice(obj, value) {
         var _a;
         (_a = obj.children[0]) === null || _a === void 0 ? void 0 : _a.currentValue = value;
         if (this.onData !== null) {
-            this.onData(obj);
+            await this.onData(obj);
         }
     }
     getDeviceBySerial(serial) {
@@ -30,14 +30,8 @@ class InputData {
     async generateData() {
         try {
             let equipments = [];
-            const response = await this.apiConnector.get('https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices');
+            const response = await this.apiConnector.get('https://sd-api-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices');
             equipments = response.data.elements;
-            if (response.data.paging.pageCount > 1) {
-                for (let index = 2; index <= response.data.paging.pageCount; index++) {
-                    const rep = await this.apiConnector.get(`https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices?pageNumber=${index}`);
-                    equipments.concat(rep.data.elements);
-                }
-            }
             for (const equipment of equipments) {
                 const device = await this.generateDataDevice(equipment);
                 this.devices.push(device);

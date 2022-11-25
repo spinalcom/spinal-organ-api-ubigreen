@@ -6,7 +6,9 @@ import { ConfigOrgan } from "../Utils/ConfigOrgan";
 export declare class NetworkProcess {
     private inputData;
     nwService: NetworkService;
+    contextId: string;
     constructor(inputData: InputData);
     init(forgeFile: ForgeFileItem, configOrgan: ConfigOrgan): Promise<void>;
-    updateData(obj: InputDataDevice): void;
+    updateAttr(dataDevice: InputDataDevice): Promise<void>;
+    updateData(obj: InputDataDevice): Promise<void>;
 }

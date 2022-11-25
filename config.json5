@@ -8,8 +8,7 @@
   },
   file: {
     // path to a digital twin in spinalhub filesystem || process.env.SPINAL_DTWIN_PATH
-    path: '/__users__/admin/Digital twin',
-    // link: 'batiment_b1.xlsx', //
+    path: '',
   },
   organ: {
     contextName: 'Network Ubigreen',

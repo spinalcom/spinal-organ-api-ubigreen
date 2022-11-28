@@ -2,6 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.InputData = void 0;
 const InputDataModel_1 = require("./InputDataModel/InputDataModel");
+require("json5/lib/register");
+const config = require("../../../config.json5");
 class InputData {
     constructor(apiConnector) {
         const intervalTest = 2000;
@@ -30,7 +32,8 @@ class InputData {
     async generateData() {
         try {
             let equipments = [];
-            const response = await this.apiConnector.get('https://sd-api-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices');
+            console.log('***************', config.host + config.refDevices_url + '?pageSize=1000');
+            const response = await this.apiConnector.get(config.host + config.refDevices_url + '?pageSize=1000');
             equipments = response.data.elements;
             for (const equipment of equipments) {
                 const device = await this.generateDataDevice(equipment);

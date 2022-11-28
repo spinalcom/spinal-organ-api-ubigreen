@@ -29,7 +29,9 @@ import {
   InputDataEndpointDataType,
   InputDataEndpointType
 } from "./InputDataModel/InputDataModel";
-
+require("json5/lib/register");
+// get the config
+const config = require("../../../config.json5");
 import axios from 'axios';
 import iconv from 'iconv-lite';
 import { ApiConnector } from '../ApiConnector';
@@ -117,12 +119,15 @@ class InputData {
   private async generateData() {
     try {
       let equipments = []
-      const response = await this.apiConnector.get('https://sd-api-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices');
+      const response = await this.apiConnector.get(config.host + config.refDevices_url + '?pageSize=1000');
       equipments = response.data.elements;
       // if (response.data.paging.pageCount > 1) {
       //   for (let index = 2; index <= response.data.paging.pageCount; index++) {
-      //     const rep = await this.apiConnector.get(`https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices?pageNumber=${index}`);
-      //     equipments.concat(rep.data.elements)
+      //     setTimeout(async () => {
+      //       const rep = await this.apiConnector.get(`https://sd-api-preprod-cnp.ubigreen.com/smartdesk/api/installations/CNP-SIEGE/refdevices?pageNumber=${index}`);
+      //       equipments.concat(rep.data.elements)
+      //     }, 2000);
+
       //   }
       // }
       for (const equipment of equipments) {

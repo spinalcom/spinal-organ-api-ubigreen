@@ -32,9 +32,6 @@ class InputData {
     async generateData() {
         try {
             let equipments = [];
-            console.log('***************', config.host + config.refDevices_url + '?pageSize=1000');
-            const response = await this.apiConnector.get(config.host + config.refDevices_url + '?pageSize=1000');
-            equipments = response.data.elements;
             for (const equipment of equipments) {
                 const device = await this.generateDataDevice(equipment);
                 this.devices.push(device);

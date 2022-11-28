@@ -119,8 +119,8 @@ class InputData {
   private async generateData() {
     try {
       let equipments = []
-      const response = await this.apiConnector.get(config.host + config.refDevices_url + '?pageSize=1000');
-      equipments = response.data.elements;
+      // const response = await this.apiConnector.get(config.host + config.refDevices_url + '?pageSize=1000');
+      // equipments = response.data.elements;
       // if (response.data.paging.pageCount > 1) {
       //   for (let index = 2; index <= response.data.paging.pageCount; index++) {
       //     setTimeout(async () => {

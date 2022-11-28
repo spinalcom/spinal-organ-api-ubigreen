@@ -11,13 +11,21 @@ const buildBmsNetworks_1 = __importDefault(require("./Utils/buildBmsNetworks"));
 const InputData_1 = require("./modules/InputData/InputData");
 const NetworkProcess_1 = require("./modules/NetworkProcess");
 const ApiConnector_1 = require("./modules/ApiConnector");
-const connectOpt = `http://${config.spinalConnector.user}:${config.spinalConnector.password}@${config.spinalConnector.host}:${config.spinalConnector.port}/`;
-const conn = spinal_core_connectorjs_type_1.spinalCore.connect(connectOpt);
+const protocol = config.spinalConnector.protocol
+    ? config.spinalConnector.protocol
+    : 'http';
+const host = config.spinalConnector.host +
+    (config.spinalConnector.port ? `:${config.spinalConnector.port}` : '');
+const login = `${config.spinalConnector.user}:${config.spinalConnector.password}`;
+const connect_opt = `${protocol}://${login}@${host}/`;
+console.log(`start connect to hub: ${protocol}://${host}/`);
+const conn = spinal_core_connectorjs_type_1.spinalCore.connect(connect_opt);
 spinal_core_connectorjs_type_1.spinalCore.load(conn, config.file.path, onLoadSuccess, onLoadError);
 function onLoadError() {
     console.log(`File does not exist in location ${config.file.path}`);
 }
 async function onLoadSuccess(forgeFile) {
+    console.log(forgeFile);
     console.log("Connected to the server and got the Entry Model");
     const apiConnector = new ApiConnector_1.ApiConnector();
     const inputData = new InputData_1.InputData(apiConnector);

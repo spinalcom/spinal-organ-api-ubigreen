@@ -34,17 +34,24 @@ import { NetworkProcess } from "./modules/NetworkProcess";
 //import { TokenManager } from "./modules/TokenManager";
 import { ApiConnector } from "./modules/ApiConnector";
 
-
-
+// callback function.
 // connection string to connect to spinalhub
-const connectOpt = `http://${config.spinalConnector.user}:${config.spinalConnector.password
-  }@${config.spinalConnector.host}:${config.spinalConnector.port}/`;
-
-// initialize the connection
-const conn = spinalCore.connect(connectOpt);
-
 // get the Model from the spinalhub, "onLoadSuccess" and "onLoadError" are 2
 // callback function.
+const protocol = config.spinalConnector.protocol
+  ? config.spinalConnector.protocol
+  : 'http';
+const host =
+  config.spinalConnector.host +
+  (config.spinalConnector.port ? `:${config.spinalConnector.port}` : '');
+const login = `${config.spinalConnector.user}:${config.spinalConnector.password}`;
+const connect_opt = `${protocol}://${login}@${host}/`;
+console.log(`start connect to hub: ${protocol}://${host}/`);
+
+// initialize the connection
+const conn = spinalCore.connect(connect_opt);
+// get the Model from the spinalhub, "onLoadSuccess" and "onLoadError" are 2
+
 spinalCore.load(conn, config.file.path, onLoadSuccess, onLoadError);
 
 // called network error or file not found
@@ -54,6 +61,8 @@ function onLoadError() {
 
 // called if connected to the server and if the spinalhub sent us the Model
 async function onLoadSuccess(forgeFile: ForgeFileItem) {
+  console.log(forgeFile);
+
   console.log("Connected to the server and got the Entry Model");
   const apiConnector = new ApiConnector();
   const inputData = new InputData(apiConnector);

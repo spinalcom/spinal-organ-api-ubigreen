@@ -61,8 +61,6 @@ function onLoadError() {
 
 // called if connected to the server and if the spinalhub sent us the Model
 async function onLoadSuccess(forgeFile: ForgeFileItem) {
-  console.log(forgeFile);
-
   console.log("Connected to the server and got the Entry Model");
   const apiConnector = new ApiConnector();
   const inputData = new InputData(apiConnector);

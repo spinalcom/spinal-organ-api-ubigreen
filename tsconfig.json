@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "target": "es2019",
+    "module": "commonjs",
+    "outDir": "dist",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+  },
+  "include": [
+    "src/**/*",
+    "src/signalR/signalR.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

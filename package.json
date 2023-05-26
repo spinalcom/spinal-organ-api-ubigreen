@@ -1,0 +1,71 @@
+{
+  "name": "spinal-organ-api-ubigreen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --enable-source-maps --trace-warnings index.js",
+    "build": "rm -fr dist && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "eslint . --ext .ts",
+    "lint:fix": "npm run eslint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spinalcom/spinal-organ-api-ubigreen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spinalcom/spinal-organ-api-ubigreen/issues"
+  },
+  "homepage": "https://github.com/spinalcom/spinal-organ-api-ubigreen#readme",
+  "dependencies": {
+    "@aspnet/signalr": "^1.0.27",
+    "@datastructures-js/priority-queue": "^5.1.1",
+    "@microsoft/signalr": "^6.0.10",
+    "axios": "^0.27.2",
+    "big-json": "^3.1.0",
+    "btoa": "^1.2.1",
+    "dotenv": "^16.0.3",
+    "i": "^0.3.7",
+    "iconv-lite": "^0.6.3",
+    "jquery": "^3.6.1",
+    "json5": "^2.2.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.4",
+    "node-cron": "^3.0.2",
+    "node-signalr": "^2.0.6",
+    "npm": "^8.19.2",
+    "pm2": "^4.5.6",
+    "q": "^1.5.1",
+    "querystring": "^0.2.1",
+    "request": "^2.88.2",
+    "socket.io": "^3.1.1",
+    "spinal-core-connectorjs_type": "git+https://github.com/spinalcom/spinal-core-connectorjs_type.git",
+    "spinal-env-viewer-graph-service": "git+https://github.com/spinalcom/Spinal-Graph-Service.git",
+    "spinal-env-viewer-plugin-documentation-service": "git+https://github.com/spinalcom/spinal-env-viewer-plugin-documentation-service.git",
+    "spinal-lib-organ-monitoring": "git+https://github.com/spinalcom/spinal-lib-organ-monitoring.git",
+    "spinal-model-bacnet": "git+https://github.com/spinalcom/spinal-model-bacnet.git",
+    "spinal-model-bmsnetwork": "git+https://github.com/spinalcom/spinal-model-bmsnetwork.git",
+    "spinal-model-graph": "git+https://github.com/spinalcom/spinal-model-graph.git",
+    "spinal-model-timeseries": "git+https://github.com/spinalcom/spinal-model-timeseries.git",
+    "ts-priority-queue": "^0.1.1",
+    "utf8": "^3.0.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/btoa": "^1.2.3",
+    "@types/node": "^18.7.18",
+    "@types/request": "^2.48.8",
+    "@types/utf8": "^3.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.3"
+  }
+}

@@ -26,6 +26,8 @@ import { SpinalContext, SpinalGraph, SpinalGraphService, SpinalNode } from "spin
 import { ApiConnector } from "src/modules/ApiConnector";
 import spinalServiceTimeSeries from './spinalTimeSeries';
 import moment from 'moment';
+import fs = require('fs/promises');
+
 require("json5/lib/register");
 // get the config
 const config = require("../../config.json5");
@@ -60,13 +62,15 @@ async function networkSmartRoomCounter(apiConnector: ApiConnector) {
     }
     const devices = await network.getChildren('hasBmsDevice');
     const url: string = config.host + config.counter_url_smartroom;
-    for (let index = 1; index <= 2; index++) {
+    for (let index = 3; index <= 3; index++) {
       console.log("request", index);
-
       const elements = [];
       await waitSync()
       const rep = await apiConnector.get<IResponseUbigreenCounter>(url + `?pageNumber=${index}`);
+      const json = JSON.stringify(rep.data);
+      await fs.writeFile('reponse.json', json);
       elements.push(...rep.data.elements)
+
       let map = new Map<string, { date: number, value: number }[]>();
       const date = new Date();
       date.setHours(date.getHours() - 2);

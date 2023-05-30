@@ -1,97 +1,48 @@
 {
   spinalConnector: {
     protocol: 'http', // protocol
-    user: 168, // user id - process.env.SPINAL_USER_ID
-    password: 'b4v4SsE2', // user password - process.env.SPINAL_PASSWORD
-    host: '127.0.0.1', // can be an ip address - process.env.SPINALHUB_IP
-    port: 7777, // port - process.env.SPINALHUB_PORT
+    user: 0, // user id - process.env.SPINAL_USER_ID
+    password: '', // user password - process.env.SPINAL_PASSWORD
+    host: '', // can be an ip address - process.env.SPINALHUB_IP
+    port: 0, // port - process.env.SPINALHUB_PORT
   },
   file: {
     // path to a digital twin in spinalhub filesystem || process.env.SPINAL_DTWIN_PATH
     path: '/__users__/admin/Mission/Digital twin Mission',
   },
   organDesk: {
-    contextName: 'Network Ubigreen',
-    contextType: 'Network',
-    networkType: 'NetworkVirtual',
-    networkName: 'SmartDesk',
+    contextName: '',
+    contextType: '',
+    networkType: '',
+    networkName: '',
   },
   organRoom: {
-    contextName: 'Network Ubigreen',
-    contextType: 'Network',
-    networkType: 'NetworkVirtual',
-    networkName: 'SmartRoom',
+    contextName: '',
+    contextType: '',
+    networkType: '',
+    networkName: '',
   },
   organFlow: {
-    contextName: 'Network Ubigreen',
-    contextType: 'Network',
-    networkType: 'NetworkVirtual',
-    networkName: 'SmartFlow',
+    contextName: '',
+    contextType: '',
+    networkType: '',
+    networkName: '',
   },
-  host: 'https: //sd-api-cnp.ubigreen.com/',
-  virtualNetwork: 'smartdesk/',
-  auth_url_smartdesk: 'https: //sd-api-cnp.ubigreen.com/smartdesk/authentication',
-  base_url_smartdesk: 'https: //sd-api-cnp.ubigreen.com/smartdesk/signalr/hubs',
-  base_url_smartroom: 'https: //sd-api-cnp.ubigreen.com/smartdesk/signalr/hubs',
-  // base_url_smartflow: 'https://sd-api-preprod-cnp.ubigreen.com/smartflow/signalr/hubs',
-  refDevices_url_smartdesk: 'smartdesk/api/installations/CNP-SIEGE/refdevices',
-  refDevices_url_smartroom: 'smartroom/api/installations/CNP-SIEGE/refdevices',
-  refDevices_url_smartflow: 'smartflow/api/installations/CNP-SIEGE/refdevices',
-  counter_url_smartroom: 'smartroom/api/installations/CNP-SIEGE/counter',
-  auth_url_socket: '/authentication',
-  username: 'smartdesk-api',
-  password: '5Xk!LL@P648Sd86H',
-  grant_type: 'password',
-  ref_installations: 'CNP-SIEGE',
-  hub_name: 'smartDeskDeviceHub',
-  function_name_server: 'updateDevicesStatus',
-  function_name_client: 'getDevicesStatus',
+  host: '',
+  virtualNetwork: '',
+  auth_url_smartdesk: '',
+  base_url_smartdesk: '',
+  base_url_smartroom: '',
+  refDevices_url_smartdesk: '',
+  refDevices_url_smartroom: '',
+  refZones_url_smartflow: '',
+  counter_url_smartroom: '',
+  auth_url_socket: '',
+  username: '',
+  password: '',
+  grant_type: '',
+  ref_installations: '',
+  hub_name: '',
+  function_name_server: '',
+  function_name_client: '',
 }
-// {
-//   spinalConnector: {
-//     protocol: 'http', // protocol
-//     user: 0, // user id - process.env.SPINAL_USER_ID
-//     password: '', // user password - process.env.SPINAL_PASSWORD
-//     host: '', // can be an ip address - process.env.SPINALHUB_IP
-//     port: 0, // port - process.env.SPINALHUB_PORT
-//   },
-//   file: {
-//     // path to a digital twin in spinalhub filesystem || process.env.SPINAL_DTWIN_PATH
-//     path: '/__users__/admin/Mission/Digital twin Mission',
-//   },
-//   organDesk: {
-//     contextName: '',
-//     contextType: '',
-//     networkType: '',
-//     networkName: '',
-//   },
-//   organRoom: {
-//     contextName: '',
-//     contextType: '',
-//     networkType: '',
-//     networkName: '',
-//   },
-//   organFlow: {
-//     contextName: '',
-//     contextType: '',
-//     networkType: '',
-//     networkName: '',
-//   },
-//   host: '',
-//   virtualNetwork: '',
-//   auth_url_smartdesk: '',
-//   base_url_smartdesk: '',
-//   base_url_smartroom: '',
-//   refDevices_url_smartdesk: '',
-//   refDevices_url_smartroom: '',
-//   refZones_url_smartflow: '',
-//   counter_url_smartroom: '',
-//   auth_url_socket: '',
-//   username: '',
-//   password: '',
-//   grant_type: '',
-//   ref_installations: '',
-//   hub_name: '',
-//   function_name_server: '',
-//   function_name_client: '',
-// }

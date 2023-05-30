@@ -58,12 +58,12 @@ async function main() {
     // // reset data for test purpose
     // await signalR([generateDataSmartdesk, generateDataSmartroom, generateDataSmartflow]);
     // start organ with endpoint counter cron
-    // await networkSmartRoomCounter(apiConnector);
+    await networkSmartRoomCounter(apiConnector);
 
-    var cron = require('node-cron');
-    cron.schedule('0 0 */2 * * *', async function () {
-      await networkSmartRoomCounter(apiConnector);
-    });
+    // var cron = require('node-cron');
+    // cron.schedule('0 0 */2 * * *', async function () {
+    //   await networkSmartRoomCounter(apiConnector);
+    // });
   }
 }
 main()

@@ -24,10 +24,7 @@ async function main() {
         await generateDataSmartroom.init(graph, config.organRoom);
         await generateDataSmartflow.init(graph, config.organFlow);
         const ubigreenContexte = await graph.getContext(config.organDesk.contextName);
-        var cron = require('node-cron');
-        cron.schedule('0 0 */2 * * *', async function () {
-            await (0, counter_1.default)(apiConnector);
-        });
+        await (0, counter_1.default)(apiConnector);
     }
 }
 main();

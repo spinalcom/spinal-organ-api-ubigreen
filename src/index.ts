@@ -30,7 +30,7 @@ import { GenerateData } from "./modules/generateData"
 import { ApiConnector } from "./modules/ApiConnector";
 import SpinalAPIMiddleware from "./spinalMiddelware";
 import networkSmartRoomCounter from "./Utils/counter";
-import ConfigFile from "../node_modules/spinal-lib-organ-monitoring/dist/classes/ConfigFile.js"
+// import ConfigFile from "../node_modules/spinal-lib-organ-monitoring/dist/classes/ConfigFile.js"
 
 
 
@@ -39,7 +39,7 @@ async function main() {
   const graph = await spinalMiddelware.getGraph();
   if (graph) {
     console.log("Connected to the server and got the Entry Model");
-    ConfigFile.init(spinalMiddelware.conn, process.env.ORGAN_NAME + "-config", process.env.SPINALHUB_IP, process.env.SPINALHUB_PROTOCOL, parseInt(process.env.REQUESTS_PORT));
+    // ConfigFile.init(spinalMiddelware.conn, process.env.ORGAN_NAME + "-config", process.env.SPINALHUB_IP, process.env.SPINALHUB_PROTOCOL, parseInt(process.env.REQUESTS_PORT));
 
     const apiConnector = new ApiConnector();
     const generateDataSmartdesk = new GenerateData(apiConnector)

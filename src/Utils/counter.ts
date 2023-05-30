@@ -26,10 +26,11 @@ import { SpinalContext, SpinalGraph, SpinalGraphService, SpinalNode } from "spin
 import { ApiConnector } from "src/modules/ApiConnector";
 import spinalServiceTimeSeries from './spinalTimeSeries';
 import moment from 'moment';
-
 require("json5/lib/register");
 // get the config
 const config = require("../../config.json5");
+// const counterjson = require("../../counter.json5");
+
 interface IResponseUbigreenCounter {
   elements: IElementsItem[];
   paging: IPaging;
@@ -59,22 +60,23 @@ async function networkSmartRoomCounter(apiConnector: ApiConnector) {
     }
     const devices = await network.getChildren('hasBmsDevice');
     const url: string = config.host + config.counter_url_smartroom;
-    for (let index = 9; index <= 12; index++) {
+    for (let index = 1; index <= 2; index++) {
       console.log("request", index);
-      const elements = []
+
+      const elements = [];
       await waitSync()
       const rep = await apiConnector.get<IResponseUbigreenCounter>(url + `?pageNumber=${index}`);
       elements.push(...rep.data.elements)
       let map = new Map<string, { date: number, value: number }[]>();
       const date = new Date();
       date.setHours(date.getHours() - 2);
-      const _date = date.getTime() / 1000;
+      const _date = Math.trunc(date.getTime() / 1000);
       for (const element of elements) {
         if (element.dateBegin > _date) {
           let item = map.get(element.serial);
           if (item === undefined) {
             item = []
-            map.set(element.serial, item)
+            map.set(element.serial, item);
           }
           item.push({ date: element.dateBegin, value: element.counter })
         }
@@ -84,10 +86,14 @@ async function networkSmartRoomCounter(apiConnector: ApiConnector) {
         const device = devices.find((_device) => {
           return _device.getName().get() === serial
         })
-        promise.push(insertTimeseries(device, arrayMap));
+        if (device) {
+          promise.push(insertTimeseries(device, arrayMap));
+        }
       }
       await Promise.all(promise)
     }
+
+
 
   } catch (error) {
     console.error(error);
@@ -115,7 +121,6 @@ function waitSync() {
   return new Promise<void>(resolve => {
     setTimeout(() => {
       console.log("waitsync");
-
       return resolve()
     }, 3000);
   })

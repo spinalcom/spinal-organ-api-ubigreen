@@ -1,0 +1,6010 @@
+{
+  "elements": [
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677073733,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677073730,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8533",
+      "dateBegin": 1677073678,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677073526,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677073285,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677073283,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677073232,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D852D",
+      "dateBegin": 1677073220,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677073173,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677073137,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677073133,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677073130,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677073101,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8533",
+      "dateBegin": 1677073078,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677073071,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677073021,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677072998,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677072926,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677072896,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677072880,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677072801,
+      "duration": 600,
+      "counter": 6
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677072794,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677072789,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677072761,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677072685,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677072683,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8535",
+      "dateBegin": 1677072638,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677072632,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D852D",
+      "dateBegin": 1677072620,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D855E",
+      "dateBegin": 1677072617,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677072573,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677072537,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677072533,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677072530,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677072501,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677072483,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D8533",
+      "dateBegin": 1677072478,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677072471,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677072441,
+      "duration": 600,
+      "counter": 8
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677072421,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677072409,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677072398,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677072359,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677072339,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677072326,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677072321,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677072298,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677072296,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677072280,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677072201,
+      "duration": 600,
+      "counter": 6
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677072194,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677072189,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677072161,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677072135,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677072085,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677072083,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677072081,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8535",
+      "dateBegin": 1677072038,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677072032,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D852D",
+      "dateBegin": 1677072020,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D855E",
+      "dateBegin": 1677072017,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84FA",
+      "dateBegin": 1677072006,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677071973,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677071958,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677071948,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677071937,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677071933,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677071930,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677071901,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677071883,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677071883,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8533",
+      "dateBegin": 1677071878,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677071871,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D854A",
+      "dateBegin": 1677071857,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677071841,
+      "duration": 600,
+      "counter": 8
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677071832,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677071821,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677071809,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677071803,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677071798,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677071759,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677071739,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677071721,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A9",
+      "dateBegin": 1677071703,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677071698,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677071696,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677071687,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677071680,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8495",
+      "dateBegin": 1677071672,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677071628,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677071601,
+      "duration": 600,
+      "counter": 6
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677071594,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677071589,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677071561,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677071535,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677071530,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677071501,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677071485,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677071483,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677071481,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8535",
+      "dateBegin": 1677071438,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677071432,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D8555",
+      "dateBegin": 1677071422,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D852D",
+      "dateBegin": 1677071420,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D855E",
+      "dateBegin": 1677071417,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84FA",
+      "dateBegin": 1677071406,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677071373,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677071358,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677071348,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677071337,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677071333,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677071330,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677071301,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677071283,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677071283,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8533",
+      "dateBegin": 1677071278,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677071276,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677071271,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D854A",
+      "dateBegin": 1677071257,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677071241,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677071232,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677071221,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677071203,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677071198,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677071189,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677071159,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677071148,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677071139,
+      "duration": 600,
+      "counter": 10
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677071139,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A9",
+      "dateBegin": 1677071103,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677071098,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677071096,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677071087,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677071080,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8495",
+      "dateBegin": 1677071072,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677071069,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677071028,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677071001,
+      "duration": 600,
+      "counter": 6
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677070994,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677070989,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677070989,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677070961,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677070960,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677070935,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677070930,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677070918,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677070901,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677070885,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677070883,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677070881,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677070864,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D8535",
+      "dateBegin": 1677070838,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677070832,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8555",
+      "dateBegin": 1677070822,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D852D",
+      "dateBegin": 1677070820,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D855E",
+      "dateBegin": 1677070817,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677070773,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677070758,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677070748,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677070737,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677070734,
+      "duration": 599,
+      "counter": 3
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677070729,
+      "duration": 601,
+      "counter": 3
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677070723,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677070701,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677070683,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677070683,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8533",
+      "dateBegin": 1677070678,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677070676,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677070671,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677070641,
+      "duration": 600,
+      "counter": 5
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677070632,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677070621,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677070603,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677070598,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677070589,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677070559,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677070548,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677070539,
+      "duration": 600,
+      "counter": 10
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677070539,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677070527,
+      "duration": 1799,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A9",
+      "dateBegin": 1677070503,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677070501,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677070498,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677070496,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677070487,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677070480,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8495",
+      "dateBegin": 1677070472,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677070469,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677070428,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677070421,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677070401,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677070394,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677070389,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677070389,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677070386,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84EA",
+      "dateBegin": 1677070374,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677070364,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677070361,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677070360,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677070335,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677070330,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677070318,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677070287,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677070283,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677070281,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677070281,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677070238,
+      "duration": 594,
+      "counter": 1
+    },
+    {
+      "serial": "11D8555",
+      "dateBegin": 1677070222,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D852D",
+      "dateBegin": 1677070220,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D855E",
+      "dateBegin": 1677070217,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677070173,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677070158,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677070148,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677070137,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677070134,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677070129,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677070123,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677070083,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677070083,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677070076,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677070041,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677070032,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677070024,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677070022,
+      "duration": 599,
+      "counter": 3
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677070003,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677069998,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677069989,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677069959,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677069948,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677069939,
+      "duration": 600,
+      "counter": 10
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677069939,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677069927,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677069901,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677069898,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677069897,
+      "duration": 599,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677069887,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677069881,
+      "duration": 599,
+      "counter": 1
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677069869,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677069863,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677069828,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677069821,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677069802,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677069794,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677069789,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677069789,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677069786,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677069764,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677069761,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677069760,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677069730,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677069718,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8498",
+      "dateBegin": 1677069697,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677069687,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677069683,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677069681,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677069681,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677069677,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677069638,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8555",
+      "dateBegin": 1677069622,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D855E",
+      "dateBegin": 1677069617,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677069573,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677069558,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677069548,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677069537,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677069534,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677069529,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677069523,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677069516,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677069484,
+      "duration": 599,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677069483,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677069476,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677069441,
+      "duration": 600,
+      "counter": 5
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677069432,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677069424,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677069422,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677069410,
+      "duration": 2399,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677069403,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677069398,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677069389,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677069360,
+      "duration": 599,
+      "counter": 2
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677069348,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677069339,
+      "duration": 600,
+      "counter": 10
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677069338,
+      "duration": 601,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677069327,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677069321,
+      "duration": 2400,
+      "counter": 0
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677069301,
+      "duration": 600,
+      "counter": 6
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677069299,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677069297,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677069287,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677069281,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677069269,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677069263,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677069228,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677069221,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677069202,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677069194,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677069189,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677069189,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677069186,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677069164,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677069161,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677069160,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677069135,
+      "duration": 1200,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677069130,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677069118,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677069102,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8498",
+      "dateBegin": 1677069097,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677069087,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677069083,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677069081,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677069080,
+      "duration": 601,
+      "counter": 0
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677069077,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677069038,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677069029,
+      "duration": 3601,
+      "counter": 0
+    },
+    {
+      "serial": "11D8555",
+      "dateBegin": 1677069022,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677068973,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677068953,
+      "duration": 605,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677068948,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677068937,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677068934,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677068929,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677068923,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677068916,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677068884,
+      "duration": 600,
+      "counter": 5
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677068884,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677068876,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677068841,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677068833,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677068824,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677068822,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677068810,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677068803,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677068798,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677068789,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677068760,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677068748,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677068739,
+      "duration": 600,
+      "counter": 10
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677068738,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677068727,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677068721,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677068720,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A9",
+      "dateBegin": 1677068704,
+      "duration": 1799,
+      "counter": 0
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677068701,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677068699,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677068697,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677068687,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677068681,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677068663,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677068627,
+      "duration": 601,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677068621,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677068602,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677068594,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677068589,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677068589,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677068586,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677068564,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677068560,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677068535,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677068533,
+      "duration": 597,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677068518,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677068502,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677068501,
+      "duration": 2400,
+      "counter": 0
+    },
+    {
+      "serial": "11D8498",
+      "dateBegin": 1677068497,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677068487,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677068483,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677068481,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677068480,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677068477,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677068438,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677068429,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8555",
+      "dateBegin": 1677068422,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677068373,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677068353,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677068348,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677068337,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677068334,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677068329,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677068323,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677068316,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677068284,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677068284,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677068276,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677068241,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677068233,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677068224,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677068222,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677068210,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677068203,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677068198,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677068189,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677068160,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677068149,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677068138,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677068136,
+      "duration": 603,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677068127,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677068121,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677068120,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677068101,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677068099,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677068097,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677068087,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677068081,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677068068,
+      "duration": 1201,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677068063,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677068027,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677068021,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677068002,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677067994,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677067989,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677067986,
+      "duration": 603,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677067986,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677067964,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677067955,
+      "duration": 605,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677067935,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677067933,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677067920,
+      "duration": 598,
+      "counter": 0
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677067902,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677067901,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8498",
+      "dateBegin": 1677067897,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677067887,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677067883,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677067881,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677067880,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677067877,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677067866,
+      "duration": 2998,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677067838,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677067829,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8555",
+      "dateBegin": 1677067822,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677067803,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677067786,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677067773,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677067753,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677067748,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677067737,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677067734,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677067729,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677067726,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677067720,
+      "duration": 603,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677067716,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D4",
+      "dateBegin": 1677067686,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677067684,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677067684,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677067676,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677067641,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677067633,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677067622,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677067610,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677067603,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677067598,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677067597,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677067589,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677067560,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677067549,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677067538,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677067536,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677067527,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677067521,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677067520,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677067501,
+      "duration": 600,
+      "counter": 5
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677067499,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677067497,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677067487,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677067481,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677067468,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677067463,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677067427,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D849E",
+      "dateBegin": 1677067425,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677067420,
+      "duration": 601,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677067402,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677067394,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677067386,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677067385,
+      "duration": 601,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677067364,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677067355,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677067335,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677067333,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677067320,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677067302,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677067301,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8498",
+      "dateBegin": 1677067297,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677067287,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677067283,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677067281,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677067280,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677067277,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677067266,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677067238,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677067229,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677067203,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677067186,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677067173,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677067153,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677067148,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677067137,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677067134,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677067130,
+      "duration": 599,
+      "counter": 1
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677067126,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677067120,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677067116,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D4",
+      "dateBegin": 1677067086,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677067084,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677067084,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677067076,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677067041,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677067033,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677067028,
+      "duration": 1196,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677067022,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677067010,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F9",
+      "dateBegin": 1677067003,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8529",
+      "dateBegin": 1677066998,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677066998,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677066997,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677066989,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677066960,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677066949,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677066938,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677066936,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677066927,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677066921,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677066920,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677066901,
+      "duration": 600,
+      "counter": 5
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677066899,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677066897,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677066887,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A8",
+      "dateBegin": 1677066884,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677066881,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677066868,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677066863,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677066827,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D849E",
+      "dateBegin": 1677066825,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677066820,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677066802,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677066794,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677066786,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677066785,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F3",
+      "dateBegin": 1677066778,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677066764,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677066755,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677066735,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677066733,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677066720,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677066702,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677066701,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8498",
+      "dateBegin": 1677066697,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677066687,
+      "duration": 4198,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677066687,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677066684,
+      "duration": 599,
+      "counter": 1
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677066681,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677066680,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677066678,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677066666,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677066633,
+      "duration": 605,
+      "counter": 3
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677066629,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852D",
+      "dateBegin": 1677066620,
+      "duration": 3600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677066603,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677066586,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677066571,
+      "duration": 602,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677066553,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677066548,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677066537,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677066534,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677066530,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677066526,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677066520,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677066517,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677066502,
+      "duration": 4199,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D4",
+      "dateBegin": 1677066486,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677066484,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677066484,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677066476,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677066473,
+      "duration": 4198,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677066441,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677066433,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677066428,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677066422,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677066410,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8503",
+      "dateBegin": 1677066409,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8529",
+      "dateBegin": 1677066398,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677066398,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677066397,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677066389,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677066360,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677066349,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677066338,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677066336,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677066327,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677066321,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677066320,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677066301,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677066299,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677066297,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677066287,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A8",
+      "dateBegin": 1677066284,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677066281,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677066268,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677066263,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853C",
+      "dateBegin": 1677066232,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677066227,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D849E",
+      "dateBegin": 1677066225,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677066220,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677066202,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677066194,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677066190,
+      "duration": 1799,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677066186,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677066185,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F3",
+      "dateBegin": 1677066178,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677066164,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677066162,
+      "duration": 2999,
+      "counter": 1
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677066155,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677066135,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677066133,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677066120,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677066101,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677066101,
+      "duration": 601,
+      "counter": 1
+    },
+    {
+      "serial": "11D8498",
+      "dateBegin": 1677066097,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677066087,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677066087,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677066084,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677066081,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677066080,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677066078,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677066066,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8535",
+      "dateBegin": 1677066038,
+      "duration": 4800,
+      "counter": 1
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677066033,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677066029,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677066003,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677065986,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677065971,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677065953,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677065948,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677065937,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677065934,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677065930,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677065926,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677065920,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677065917,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677065902,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D4",
+      "dateBegin": 1677065886,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677065884,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677065883,
+      "duration": 601,
+      "counter": 4
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677065876,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677065873,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677065841,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677065833,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677065828,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677065822,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677065810,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8503",
+      "dateBegin": 1677065809,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8529",
+      "dateBegin": 1677065798,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677065798,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677065797,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677065789,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677065759,
+      "duration": 601,
+      "counter": 0
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677065749,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677065738,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677065736,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677065727,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677065722,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677065720,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677065701,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677065699,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677065697,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677065687,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A8",
+      "dateBegin": 1677065684,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677065681,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677065668,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677065663,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853C",
+      "dateBegin": 1677065632,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677065627,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D849E",
+      "dateBegin": 1677065625,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677065620,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677065602,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677065590,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677065586,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677065585,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B1",
+      "dateBegin": 1677065579,
+      "duration": 7200,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F3",
+      "dateBegin": 1677065578,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677065564,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677065562,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677065555,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677065535,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677065533,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677065520,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677065501,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677065501,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677065487,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677065487,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677065484,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677065481,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677065481,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677065478,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677065466,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677065433,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677065430,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677065403,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677065386,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677065371,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677065354,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677065348,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677065337,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677065334,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677065330,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677065326,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677065317,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677065302,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D4",
+      "dateBegin": 1677065286,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677065284,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677065283,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677065276,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677065273,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677065241,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677065233,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677065228,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677065222,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677065210,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8503",
+      "dateBegin": 1677065209,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8529",
+      "dateBegin": 1677065198,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677065197,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A3",
+      "dateBegin": 1677065165,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677065159,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677065149,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677065138,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677065136,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677065127,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677065122,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677065120,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A9",
+      "dateBegin": 1677065105,
+      "duration": 3599,
+      "counter": 0
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677065101,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677065099,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677065097,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84E7",
+      "dateBegin": 1677065087,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84A8",
+      "dateBegin": 1677065084,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677065081,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677065068,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677065063,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853C",
+      "dateBegin": 1677065032,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677065028,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D849E",
+      "dateBegin": 1677065025,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677065020,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677065002,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B9",
+      "dateBegin": 1677064994,
+      "duration": 1200,
+      "counter": 0
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677064990,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677064986,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677064985,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B1",
+      "dateBegin": 1677064979,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F3",
+      "dateBegin": 1677064978,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677064964,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677064962,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D88CC",
+      "dateBegin": 1677064937,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677064935,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8517",
+      "dateBegin": 1677064933,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DA",
+      "dateBegin": 1677064933,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677064920,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677064902,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677064901,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677064887,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677064887,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677064884,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677064881,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677064878,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B7",
+      "dateBegin": 1677064875,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677064866,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BF",
+      "dateBegin": 1677064848,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677064830,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677064803,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677064784,
+      "duration": 602,
+      "counter": 2
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677064771,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677064754,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677064737,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677064734,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677064730,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677064727,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677064717,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677064702,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D4",
+      "dateBegin": 1677064686,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677064684,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677064683,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677064676,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677064673,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677064641,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677064633,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677064628,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677064622,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677064610,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8503",
+      "dateBegin": 1677064609,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8529",
+      "dateBegin": 1677064598,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677064597,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677064590,
+      "duration": 1199,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A3",
+      "dateBegin": 1677064565,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677064559,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677064550,
+      "duration": 599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677064538,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677064536,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677064527,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677064522,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677064520,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A9",
+      "dateBegin": 1677064505,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677064501,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677064499,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677064497,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A8",
+      "dateBegin": 1677064484,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677064481,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677064468,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677064463,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D853C",
+      "dateBegin": 1677064432,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677064428,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D849E",
+      "dateBegin": 1677064423,
+      "duration": 602,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677064420,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677064402,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677064390,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677064387,
+      "duration": 599,
+      "counter": 3
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677064385,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B1",
+      "dateBegin": 1677064379,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F3",
+      "dateBegin": 1677064378,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677064364,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677064362,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677064358,
+      "duration": 1197,
+      "counter": 3
+    },
+    {
+      "serial": "11D88CC",
+      "dateBegin": 1677064337,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677064335,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8517",
+      "dateBegin": 1677064333,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677064321,
+      "duration": 599,
+      "counter": 2
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677064302,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F4",
+      "dateBegin": 1677064302,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677064301,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8496",
+      "dateBegin": 1677064288,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677064287,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677064287,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677064284,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677064281,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D852B",
+      "dateBegin": 1677064278,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B7",
+      "dateBegin": 1677064275,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677064266,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677064230,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677064203,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677064184,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677064154,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8508",
+      "dateBegin": 1677064148,
+      "duration": 1200,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677064137,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677064130,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677064127,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677064123,
+      "duration": 1797,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677064117,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8550",
+      "dateBegin": 1677064108,
+      "duration": 600,
+      "counter": 5
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677064102,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D4",
+      "dateBegin": 1677064086,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677064084,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677064083,
+      "duration": 600,
+      "counter": 6
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677064076,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677064073,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677064041,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677064033,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677064028,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677064022,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8551",
+      "dateBegin": 1677064010,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8503",
+      "dateBegin": 1677064009,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D8529",
+      "dateBegin": 1677063998,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677063997,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677063990,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A3",
+      "dateBegin": 1677063965,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677063959,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677063950,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677063938,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8543",
+      "dateBegin": 1677063936,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677063927,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677063922,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F8",
+      "dateBegin": 1677063920,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A9",
+      "dateBegin": 1677063905,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677063901,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677063899,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677063897,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84A8",
+      "dateBegin": 1677063884,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677063881,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677063868,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677063863,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D853C",
+      "dateBegin": 1677063832,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677063828,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D849E",
+      "dateBegin": 1677063823,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677063820,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677063802,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677063790,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677063787,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677063786,
+      "duration": 599,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B1",
+      "dateBegin": 1677063779,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F3",
+      "dateBegin": 1677063778,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84EA",
+      "dateBegin": 1677063775,
+      "duration": 6599,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677063764,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677063762,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677063758,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D88CC",
+      "dateBegin": 1677063737,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677063735,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8517",
+      "dateBegin": 1677063733,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677063721,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677063702,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677063701,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8496",
+      "dateBegin": 1677063688,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677063687,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BC",
+      "dateBegin": 1677063687,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677063684,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677063682,
+      "duration": 1799,
+      "counter": 4
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677063681,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B7",
+      "dateBegin": 1677063675,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677063666,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677063630,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677063603,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677063584,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677063554,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677063537,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677063534,
+      "duration": 1200,
+      "counter": 1
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677063531,
+      "duration": 599,
+      "counter": 2
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677063527,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677063523,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677063517,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8550",
+      "dateBegin": 1677063508,
+      "duration": 600,
+      "counter": 5
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677063502,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677063484,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677063483,
+      "duration": 600,
+      "counter": 6
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677063476,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677063473,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677063441,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677063433,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677063428,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677063422,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8503",
+      "dateBegin": 1677063410,
+      "duration": 599,
+      "counter": 4
+    },
+    {
+      "serial": "11D8529",
+      "dateBegin": 1677063398,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677063397,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677063390,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A3",
+      "dateBegin": 1677063365,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677063359,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677063350,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C7",
+      "dateBegin": 1677063338,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84CD",
+      "dateBegin": 1677063327,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8552",
+      "dateBegin": 1677063322,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A9",
+      "dateBegin": 1677063305,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8541",
+      "dateBegin": 1677063301,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D868E",
+      "dateBegin": 1677063299,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E0",
+      "dateBegin": 1677063297,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84A8",
+      "dateBegin": 1677063284,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8557",
+      "dateBegin": 1677063281,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D852E",
+      "dateBegin": 1677063268,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84C2",
+      "dateBegin": 1677063262,
+      "duration": 601,
+      "counter": 1
+    },
+    {
+      "serial": "11D872B",
+      "dateBegin": 1677063228,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D853C",
+      "dateBegin": 1677063227,
+      "duration": 605,
+      "counter": 2
+    },
+    {
+      "serial": "11D849E",
+      "dateBegin": 1677063223,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84CC",
+      "dateBegin": 1677063220,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8527",
+      "dateBegin": 1677063202,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86E0",
+      "dateBegin": 1677063190,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D1",
+      "dateBegin": 1677063187,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84C4",
+      "dateBegin": 1677063186,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B1",
+      "dateBegin": 1677063179,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84F3",
+      "dateBegin": 1677063178,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84EA",
+      "dateBegin": 1677063175,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D6",
+      "dateBegin": 1677063164,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8733",
+      "dateBegin": 1677063162,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8581",
+      "dateBegin": 1677063158,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84B4",
+      "dateBegin": 1677063148,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D88CC",
+      "dateBegin": 1677063137,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EE",
+      "dateBegin": 1677063135,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8517",
+      "dateBegin": 1677063133,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84EC",
+      "dateBegin": 1677063121,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84FD",
+      "dateBegin": 1677063102,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D853E",
+      "dateBegin": 1677063101,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84DF",
+      "dateBegin": 1677063096,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8496",
+      "dateBegin": 1677063088,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8558",
+      "dateBegin": 1677063087,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D857B",
+      "dateBegin": 1677063085,
+      "duration": 599,
+      "counter": 2
+    },
+    {
+      "serial": "11D84AB",
+      "dateBegin": 1677063082,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D8564",
+      "dateBegin": 1677063081,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B7",
+      "dateBegin": 1677063075,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A2",
+      "dateBegin": 1677063066,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84BE",
+      "dateBegin": 1677063034,
+      "duration": 2399,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B0",
+      "dateBegin": 1677063030,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D855E",
+      "dateBegin": 1677063017,
+      "duration": 6600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84E3",
+      "dateBegin": 1677063003,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84F2",
+      "dateBegin": 1677062984,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8513",
+      "dateBegin": 1677062972,
+      "duration": 1799,
+      "counter": 2
+    },
+    {
+      "serial": "11D84D5",
+      "dateBegin": 1677062954,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D872C",
+      "dateBegin": 1677062937,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D84CE",
+      "dateBegin": 1677062934,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D84DC",
+      "dateBegin": 1677062931,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D8579",
+      "dateBegin": 1677062927,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D8500",
+      "dateBegin": 1677062923,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84B3",
+      "dateBegin": 1677062917,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8550",
+      "dateBegin": 1677062908,
+      "duration": 600,
+      "counter": 5
+    },
+    {
+      "serial": "11D84C5",
+      "dateBegin": 1677062902,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84AF",
+      "dateBegin": 1677062884,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84FF",
+      "dateBegin": 1677062883,
+      "duration": 600,
+      "counter": 6
+    },
+    {
+      "serial": "11D84F1",
+      "dateBegin": 1677062876,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D8589",
+      "dateBegin": 1677062873,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84C1",
+      "dateBegin": 1677062841,
+      "duration": 600,
+      "counter": 3
+    },
+    {
+      "serial": "11D854F",
+      "dateBegin": 1677062833,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D8",
+      "dateBegin": 1677062828,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84BD",
+      "dateBegin": 1677062822,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8503",
+      "dateBegin": 1677062810,
+      "duration": 600,
+      "counter": 4
+    },
+    {
+      "serial": "11D84AE",
+      "dateBegin": 1677062799,
+      "duration": 2999,
+      "counter": 3
+    },
+    {
+      "serial": "11D8529",
+      "dateBegin": 1677062798,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84B5",
+      "dateBegin": 1677062797,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D8504",
+      "dateBegin": 1677062790,
+      "duration": 600,
+      "counter": 2
+    },
+    {
+      "serial": "11D84A3",
+      "dateBegin": 1677062765,
+      "duration": 600,
+      "counter": 0
+    },
+    {
+      "serial": "11D84D0",
+      "dateBegin": 1677062759,
+      "duration": 600,
+      "counter": 1
+    },
+    {
+      "serial": "11D86B3",
+      "dateBegin": 1677062750,
+      "duration": 600,
+      "counter": 0
+    }
+  ],
+  "paging": {
+    "pageNumber": 1,
+    "pageSize": 1000,
+    "pageCount": 10,
+    "totalElements": 9378
+  }
+}

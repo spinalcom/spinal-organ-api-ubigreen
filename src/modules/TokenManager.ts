@@ -53,8 +53,6 @@ export class TokenManager {
       }
       const response = await axios.post(this.auth_url,
         querystring.stringify({ username: config.username, password: config.password, grant_type: config.grant_type }));
-      console.log("=======", response.data.access_token);
-
       this.token = response.data.access_token;
       this.expire_in = response.data.expires_in * 1000; // convert to ms
       this.obtained_time = new Date().getTime();

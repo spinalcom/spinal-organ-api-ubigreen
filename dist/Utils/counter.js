@@ -19,7 +19,7 @@ async function networkSmartRoomCounter(apiConnector) {
         }
         const devices = await network.getChildren('hasBmsDevice');
         const url = config.host + config.counter_url_smartroom;
-        for (let index = 9; index <= 12; index++) {
+        for (let index = 1; index <= 2; index++) {
             console.log("request", index);
             const elements = [];
             await waitSync();
@@ -28,7 +28,7 @@ async function networkSmartRoomCounter(apiConnector) {
             let map = new Map();
             const date = new Date();
             date.setHours(date.getHours() - 2);
-            const _date = date.getTime() / 1000;
+            const _date = Math.trunc(date.getTime() / 1000);
             for (const element of elements) {
                 if (element.dateBegin > _date) {
                     let item = map.get(element.serial);
@@ -44,7 +44,9 @@ async function networkSmartRoomCounter(apiConnector) {
                 const device = devices.find((_device) => {
                     return _device.getName().get() === serial;
                 });
-                promise.push(insertTimeseries(device, arrayMap));
+                if (device) {
+                    promise.push(insertTimeseries(device, arrayMap));
+                }
             }
             await Promise.all(promise);
         }

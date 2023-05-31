@@ -62,7 +62,7 @@ async function networkSmartRoomCounter(apiConnector: ApiConnector) {
     }
     const devices = await network.getChildren('hasBmsDevice');
     const url: string = config.host + config.counter_url_smartroom;
-    for (let index = 3; index <= 3; index++) {
+    for (let index = 4; index <= 5; index++) {
       console.log("request", index);
       const elements = [];
       await waitSync()
@@ -72,11 +72,14 @@ async function networkSmartRoomCounter(apiConnector: ApiConnector) {
       elements.push(...rep.data.elements)
 
       let map = new Map<string, { date: number, value: number }[]>();
-      const date = new Date();
-      date.setHours(date.getHours() - 2);
-      const _date = Math.trunc(date.getTime() / 1000);
+      const date1 = new Date();
+      date1.setHours(date1.getHours() - 3);
+      const date2 = new Date();
+      date2.setHours(date2.getHours() - 1);
+      const _date1 = Math.trunc(date1.getTime() / 1000);
+      const _date2 = Math.trunc(date2.getTime() / 1000);
       for (const element of elements) {
-        if (element.dateBegin > _date) {
+        if (element.dateBegin < _date2 && element.dateBegin > _date1) {
           let item = map.get(element.serial);
           if (item === undefined) {
             item = []
@@ -107,7 +110,7 @@ async function networkSmartRoomCounter(apiConnector: ApiConnector) {
 export default networkSmartRoomCounter
 
 
-async function insertTimeseries(device, arrayMap: { date: number; value: number; }[]) {
+async function insertTimeseries(device: SpinalNode, arrayMap: { date: number; value: number; }[]) {
   const endpoints = await device.getChildren('hasBmsEndpoint');
   for (const endpoint of endpoints) {
     if (endpoint.getName().get() === ' Counter') {

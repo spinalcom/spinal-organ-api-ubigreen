@@ -62,13 +62,11 @@ async function networkSmartRoomCounter(apiConnector: ApiConnector) {
     }
     const devices = await network.getChildren('hasBmsDevice');
     const url: string = config.host + config.counter_url_smartroom;
-    for (let index = 4; index <= 5; index++) {
+    for (let index = 1; index <= 3; index++) {
       console.log("request", index);
       const elements = [];
       await waitSync()
       const rep = await apiConnector.get<IResponseUbigreenCounter>(url + `?pageNumber=${index}`);
-      const json = JSON.stringify(rep.data);
-      await fs.writeFile('reponse.json', json);
       elements.push(...rep.data.elements)
 
       let map = new Map<string, { date: number, value: number }[]>();

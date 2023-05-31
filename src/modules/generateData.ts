@@ -251,7 +251,6 @@ export class GenerateData {
    * @memberof GenerateData
    */
   async updateData(obj: InputDataDevice) {
-    // console.log("Update data device ! => ", obj.name);
     await this.nwService.updateData.call(this.nwService, obj);
   }
   public async updateAttr(dataDevice: InputDataDevice, networkName?: string) {

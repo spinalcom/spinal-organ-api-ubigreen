@@ -56,6 +56,7 @@ async function signalR(tabGenerateData) {
                 for (const message of messages) {
                     const result = await generateData_1.GenerateData.getDeviceBySerialOrByRefZone(message.serial, message.value, tabGenerateData);
                     if (result !== undefined) {
+                        console.log(result.objDevice.serial);
                         result.generateData.updateData(result.objDevice);
                     }
                     else {
@@ -88,6 +89,7 @@ async function signalR(tabGenerateData) {
                 for (const message of messages) {
                     const result = await generateData_1.GenerateData.getDeviceBySerialOrByRefZone(message.refZone, message.value, tabGenerateData);
                     if (result !== undefined) {
+                        console.log(result.objDevice.serial);
                         result.generateData.updateData(result.objDevice);
                     }
                     else {
@@ -97,6 +99,7 @@ async function signalR(tabGenerateData) {
             });
         };
         await startSignalRSmartFlow(tabGenerateData);
+        await startSignalRSmartDeskSmartRoom(tabGenerateData);
     }
     catch (error) {
         console.error(error);

@@ -91,6 +91,7 @@ export default async function signalR(tabGenerateData: GenerateData[]) {
           const result = await GenerateData.getDeviceBySerialOrByRefZone(message.serial, message.value, tabGenerateData);
 
           if (result !== undefined) {
+            console.log(result.objDevice.serial);
             result.generateData.updateData(result.objDevice);
           } else {
             console.log("unknown Serial Device");
@@ -131,6 +132,7 @@ export default async function signalR(tabGenerateData: GenerateData[]) {
         for (const message of messages) {
           const result = await GenerateData.getDeviceBySerialOrByRefZone(message.refZone, message.value, tabGenerateData);
           if (result !== undefined) {
+            console.log(result.objDevice.serial);
             result.generateData.updateData(result.objDevice);
           } else {
             console.log("unknown Serial Device");
@@ -139,7 +141,7 @@ export default async function signalR(tabGenerateData: GenerateData[]) {
       });
     };
     await startSignalRSmartFlow(tabGenerateData)
-    // await startSignalRSmartDeskSmartRoom(tabGenerateData);
+    await startSignalRSmartDeskSmartRoom(tabGenerateData);
 
   } catch (error) {
     console.error(error);

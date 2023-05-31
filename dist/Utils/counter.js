@@ -5,7 +5,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const spinal_env_viewer_graph_service_1 = require("spinal-env-viewer-graph-service");
 const spinalTimeSeries_1 = __importDefault(require("./spinalTimeSeries"));
-const fs = require("fs/promises");
 require("json5/lib/register");
 const config = require("../../config.json5");
 async function networkSmartRoomCounter(apiConnector) {
@@ -20,13 +19,11 @@ async function networkSmartRoomCounter(apiConnector) {
         }
         const devices = await network.getChildren('hasBmsDevice');
         const url = config.host + config.counter_url_smartroom;
-        for (let index = 4; index <= 5; index++) {
+        for (let index = 1; index <= 3; index++) {
             console.log("request", index);
             const elements = [];
             await waitSync();
             const rep = await apiConnector.get(url + `?pageNumber=${index}`);
-            const json = JSON.stringify(rep.data);
-            await fs.writeFile('reponse.json', json);
             elements.push(...rep.data.elements);
             let map = new Map();
             const date1 = new Date();

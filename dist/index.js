@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const signalR_1 = __importDefault(require("./signalR/signalR"));
 require("json5/lib/register");
 const config = require("../config.json5");
 const generateData_1 = require("./modules/generateData");
@@ -22,7 +23,11 @@ async function main() {
         await generateDataSmartroom.init(graph, config.organRoom);
         await generateDataSmartflow.init(graph, config.organFlow);
         const ubigreenContexte = await graph.getContext(config.organDesk.contextName);
-        await (0, counter_1.default)(apiConnector);
+        await (0, signalR_1.default)([generateDataSmartdesk, generateDataSmartroom, generateDataSmartflow]);
+        var cron = require('node-cron');
+        cron.schedule('0 */2 * * *', async function () {
+            await (0, counter_1.default)(apiConnector);
+        });
     }
 }
 main();

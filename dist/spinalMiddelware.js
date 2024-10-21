@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-require("json5/lib/register");
-const config = require("../config.json5");
 const spinal_core_connectorjs_type_1 = require("spinal-core-connectorjs_type");
 const spinal_env_viewer_graph_service_1 = require("spinal-env-viewer-graph-service");
+const config_1 = require("./config");
+const spinal_lib_organ_monitoring_1 = require("spinal-lib-organ-monitoring");
 class SpinalAPIMiddleware {
     static getInstance() {
         if (SpinalAPIMiddleware.instance === null) {
@@ -14,19 +14,17 @@ class SpinalAPIMiddleware {
     constructor() {
         this.iteratorGraph = this.geneGraph();
         this.loadedPtr = new Map();
-        const protocol = config.spinalConnector.protocol
-            ? config.spinalConnector.protocol
-            : 'http';
-        const host = config.spinalConnector.host +
-            (config.spinalConnector.port ? `:${config.spinalConnector.port}` : '');
-        const login = `${config.spinalConnector.user}:${config.spinalConnector.password}`;
+        const protocol = config_1.SPINALHUB_PROTOCOL ? config_1.SPINALHUB_PROTOCOL : 'http';
+        const host = config_1.SPINALHUB_IP + (config_1.SPINALHUB_PORT ? `:${config_1.SPINALHUB_PORT}` : '');
+        const login = `${config_1.SPINAL_USER_ID}:${config_1.SPINAL_PASSWORD}`;
         const connect_opt = `${protocol}://${login}@${host}/`;
         console.log(`start connect to hub: ${protocol}://${host}/`);
         this.conn = spinal_core_connectorjs_type_1.spinalCore.connect(connect_opt);
+        spinal_lib_organ_monitoring_1.configFile.init(this.conn, `${config_1.SPINAL_MONITORING_FILE_NAME}`, 'Connector', config_1.SPINALHUB_IP, parseInt(config_1.SPINALHUB_PORT));
     }
     async *geneGraph() {
         const init = new Promise((resolve, reject) => {
-            spinal_core_connectorjs_type_1.spinalCore.load(this.conn, config.file.path, (graph) => {
+            spinal_core_connectorjs_type_1.spinalCore.load(this.conn, config_1.SPINAL_DIGITALTWIN_PATH, (graph) => {
                 spinal_env_viewer_graph_service_1.SpinalGraphService.setGraph(graph)
                     .then(() => {
                     resolve(graph);
@@ -36,7 +34,7 @@ class SpinalAPIMiddleware {
                     reject();
                 });
             }, () => {
-                console.error(`File does not exist in location ${config.file.path}`);
+                console.error(`File does not exist in location ${config_1.SPINAL_DIGITALTWIN_PATH}`);
                 reject();
             });
         });

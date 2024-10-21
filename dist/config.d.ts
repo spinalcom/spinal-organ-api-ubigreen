@@ -1,0 +1,42 @@
+import './env';
+export declare const SPINALHUB_PROTOCOL: string;
+export declare const SPINALHUB_IP: string;
+export declare const SPINALHUB_PORT: string;
+export declare const SPINAL_USER_ID: string;
+export declare const SPINAL_PASSWORD: string;
+export declare const SPINAL_DIGITALTWIN_PATH: string;
+export declare const SPINAL_MONITORING_FILE_NAME: string;
+export declare const ORGAN_RUN_MODE: string;
+export declare const NETWORK_AUTH_URL_SMARTDESK: string;
+export declare const NETWORK_BASE_URL_SMARTDESK: string;
+export declare const NETWORK_AUTH_URL_SOCKET: string;
+export declare const NETWORK_HUB_NAME: string;
+export declare const NETWORK_FUNC_NAME_SERVER: string;
+export declare const NETWORK_FUNC_NAME_CLIENT: string;
+export declare const NETWORK_USERNAME: string;
+export declare const NETWORK_PASSWORD: string;
+export declare const NETWORK_HOST: string;
+export declare const NETWORK_URL_SMARTROOM: string;
+export declare const NETWORK_GRANT_TYPE: string;
+export declare const NETWORK_REF_INSTALLATIONS: string;
+export declare const NETWORK_REF_DEVICES_URL_SMARTDESK: string;
+export declare const NETWORK_REF_DEVICES_URL_SMARTROOM: string;
+export declare const NETWORK_REF_ZONES_URL_SMARTFLOW: string;
+export declare const NETWORK_CONFIG_ORGAN_DESK: {
+    contextName: string;
+    contextType: string;
+    networkName: string;
+    networkType: string;
+};
+export declare const NETWORK_CONFIG_ORGAN_ROOM: {
+    contextName: string;
+    contextType: string;
+    networkName: string;
+    networkType: string;
+};
+export declare const NETWORK_CONFIG_ORGAN_FLOW: {
+    contextName: string;
+    contextType: string;
+    networkName: string;
+    networkType: string;
+};

@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ApiConnector = void 0;
 const axios_1 = __importDefault(require("axios"));
 const TokenManager_1 = require("./TokenManager");
-const querystring = require('querystring');
 class ApiConnector {
     constructor() {
         this.TokenManager = new TokenManager_1.TokenManager();
@@ -14,9 +13,9 @@ class ApiConnector {
     async getConfig() {
         return {
             headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-                Authorization: "Bearer " + await this.TokenManager.getToken()
-            }
+                'Content-Type': 'application/x-www-form-urlencoded',
+                Authorization: 'Bearer ' + (await this.TokenManager.getToken()),
+            },
         };
     }
     async get(url) {

@@ -1,6 +1,6 @@
-import { InputDataDevice as idDevice } from 'spinal-model-bmsnetwork';
-import { InputDataEndpoint } from './InputDataEndpoint';
-import { InputDataEndpointGroup } from './InputDataEndpointGroup';
+import { type InputDataDevice as idDevice } from 'spinal-model-bmsnetwork';
+import type { InputDataEndpoint } from './InputDataEndpoint';
+import type { InputDataEndpointGroup } from './InputDataEndpointGroup';
 export declare class InputDataDevice implements idDevice {
     id: string;
     name: string;

@@ -1,29 +1,27 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const querystring = require('querystring');
-require("json5/lib/register");
-const config = require("../../config.json5");
-const signalr = require('node-signalr');
-const { exit } = require('process');
+const querystring_1 = require("querystring");
+const node_signalr_1 = __importDefault(require("node-signalr"));
 const axios = require('axios').create();
 const generateData_1 = require("../modules/generateData");
+const config_1 = require("../config");
 async function signalR(tabGenerateData) {
     try {
-        const base_url = config.base_url_smartdesk;
-        const auth_url = base_url + config.auth_url_socket;
-        const hub_name = config.hub_name;
-        const function_name_server = config.function_name_server;
-        const function_name_client = config.function_name_client;
-        const ref_installations = config.ref_installations;
-        const user = config.username;
-        const password = config.password;
-        const grant_type = config.grant_type;
+        const base_url = config_1.NETWORK_BASE_URL_SMARTDESK;
+        const auth_url = base_url + config_1.NETWORK_AUTH_URL_SOCKET;
+        const hub_name = config_1.NETWORK_HUB_NAME;
+        const function_name_server = config_1.NETWORK_FUNC_NAME_SERVER;
+        const function_name_client = config_1.NETWORK_FUNC_NAME_CLIENT;
+        const ref_installations = config_1.NETWORK_REF_INSTALLATIONS;
         const authenticate = async () => {
             try {
-                const json = await axios.post(auth_url, querystring.stringify({
-                    password: password,
-                    userName: user,
-                    grant_type: grant_type
+                const json = await axios.post(auth_url, (0, querystring_1.stringify)({
+                    password: config_1.NETWORK_PASSWORD,
+                    userName: config_1.NETWORK_USERNAME,
+                    grant_type: config_1.NETWORK_GRANT_TYPE,
                 }));
                 return json.data.access_token;
             }
@@ -35,9 +33,12 @@ async function signalR(tabGenerateData) {
         const startSignalRSmartDeskSmartRoom = async (tabGenerateData) => {
             let token = await authenticate();
             if (!token)
-                exit();
-            let client = new signalr.client(base_url, [hub_name]);
-            client.qs = { access_token: `Bearer=${token}`, ref_installations: ref_installations };
+                process.exit();
+            let client = new node_signalr_1.default.client(base_url, [hub_name]);
+            client.qs = {
+                access_token: `Bearer=${token}`,
+                ref_installations: ref_installations,
+            };
             client.on('connected', () => {
                 console.log('SignalR client connected.');
                 client.connection.hub.call(hub_name, function_name_client);
@@ -60,7 +61,7 @@ async function signalR(tabGenerateData) {
                         result.generateData.updateData(result.objDevice);
                     }
                     else {
-                        console.log("unknown Serial Device");
+                        console.log('unknown Serial Device');
                     }
                 }
             });
@@ -68,12 +69,15 @@ async function signalR(tabGenerateData) {
         const startSignalRSmartFlow = async (tabGenerateData) => {
             let token = await authenticate();
             if (!token)
-                exit();
-            let client = new signalr.client(base_url, ["smartFlowZoneHub"]);
-            client.qs = { access_token: `Bearer=${token}`, ref_installations: ref_installations };
+                process.exit();
+            let client = new node_signalr_1.default.client(base_url, ['smartFlowZoneHub']);
+            client.qs = {
+                access_token: `Bearer=${token}`,
+                ref_installations: ref_installations,
+            };
             client.on('connected', () => {
                 console.log('SignalR client connected.');
-                client.connection.hub.call("smartFlowZoneHub", "getZonesLastStatus");
+                client.connection.hub.call('smartFlowZoneHub', 'getZonesLastStatus');
             });
             client.on('reconnecting', (count) => {
                 console.log(`SignalR client reconnecting (${count}).`);
@@ -85,7 +89,7 @@ async function signalR(tabGenerateData) {
                 console.error(`SignalR client connect error: ${code}.`);
             });
             client.start();
-            client.connection.hub.on("smartFlowZoneHub", "updateZonesLastStates", async (messages) => {
+            client.connection.hub.on('smartFlowZoneHub', 'updateZonesLastStates', async (messages) => {
                 for (const message of messages) {
                     const result = await generateData_1.GenerateData.getDeviceBySerialOrByRefZone(message.refZone, message.value, tabGenerateData);
                     if (result !== undefined) {
@@ -93,7 +97,7 @@ async function signalR(tabGenerateData) {
                         result.generateData.updateData(result.objDevice);
                     }
                     else {
-                        console.log("unknown Serial Device");
+                        console.log('unknown Serial Device');
                     }
                 }
             });

@@ -22,29 +22,20 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-/**
- * @enum {number}
- */
-export enum InputDataEndpointDataType {
-  Null,
-  Boolean,
-  Unsigned,
-  Unsigned8,
-  Unsigned16,
-  Unsigned32,
-  Integer,
-  Integer16,
-  Real,
-  Double,
-  OctetString,
-  CharacterString,
-  BitString,
-  Enumerated,
-  Date,
-  Time,
-  Array,
-  DateTime,
-  Long,
-  String,
-  Duration,
+import { readFile, writeFile } from 'fs/promises';
+import { resolve } from 'path';
+
+const fileName = resolve(__dirname, '..', '..', '.lastrun');
+
+export async function getLastRunDiscover(): Promise<number> {
+  try {
+    const fileData = await readFile(fileName, 'utf8');
+    return parseInt(fileData);
+  } catch (error) {
+    return 0;
+  }
+}
+
+export function setLastRunDiscover(): Promise<void> {
+  return writeFile(fileName, Date.now().toString());
 }

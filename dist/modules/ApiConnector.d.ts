@@ -3,7 +3,7 @@ export declare class ApiConnector {
     constructor();
     getConfig(): Promise<{
         headers: {
-            "Content-Type": string;
+            'Content-Type': string;
             Authorization: string;
         };
     }>;

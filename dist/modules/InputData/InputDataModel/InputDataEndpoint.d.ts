@@ -1,4 +1,4 @@
-import { InputDataEndpoint as idEndpoint, InputDataEndpointDataType, InputDataEndpointType } from "spinal-model-bmsnetwork";
+import { type InputDataEndpoint as idEndpoint, InputDataEndpointDataType, InputDataEndpointType } from 'spinal-model-bmsnetwork';
 export declare class InputDataEndpoint implements idEndpoint {
     id: string;
     typeId: string;

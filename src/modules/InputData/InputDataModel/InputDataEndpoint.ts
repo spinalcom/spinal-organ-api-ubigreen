@@ -1,10 +1,10 @@
 /*
- * Copyright 2022 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -23,13 +23,13 @@
  */
 
 import {
-  InputDataEndpoint as idEndpoint,
+  type InputDataEndpoint as idEndpoint,
   InputDataEndpointDataType,
   InputDataEndpointType,
-  SpinalBmsEndpoint
-} from "spinal-model-bmsnetwork";
+  SpinalBmsEndpoint,
+} from 'spinal-model-bmsnetwork';
 
-import { genUID } from "../../../Utils/genUID";
+import { genUID } from '../../../Utils/genUID';
 
 /**
  * @property {string} id
@@ -70,13 +70,13 @@ export class InputDataEndpoint implements idEndpoint {
    * @memberof InputDataEndpoint
    */
   constructor(
-    name: string = "default endpoint name",
+    name: string = 'default endpoint name',
     currentValue: number | string | boolean = 0,
-    unit: string = "unit",
+    unit: string = 'unit',
     dataType: InputDataEndpointDataType = InputDataEndpointDataType.Integer,
     type: InputDataEndpointType = InputDataEndpointType.Other,
-    id: string = genUID("InputDataEndpoint"),
-    path: string = "default endpoint path"
+    id: string = genUID('InputDataEndpoint'),
+    path: string = 'default endpoint path',
   ) {
     this.nodeTypeName = SpinalBmsEndpoint.nodeTypeName;
     this.id = id;

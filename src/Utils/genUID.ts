@@ -1,10 +1,10 @@
 /*
- * Copyright 2022 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -23,11 +23,15 @@
  */
 
 function s4(): string {
-  return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
+  return Math.floor((1 + Math.random()) * 0x10000)
+    .toString(16)
+    .substring(1);
 }
 
 function genUID(constructor: string): string {
-  const res: string = `${constructor}-${s4() + s4()}-${s4()}-${s4()}-${s4()}-${s4() + s4() + s4()}-${Date.now().toString(16)}`;
+  const res: string = `${constructor}-${s4() + s4()}-${s4()}-${s4()}-${s4()}-${
+    s4() + s4() + s4()
+  }-${Date.now().toString(16)}`;
 
   return res;
 }

@@ -1,7 +1,7 @@
-import { InputDataDevice } from "./InputData/InputDataModel/InputDataModel";
+import { InputDataDevice } from './InputData/InputDataModel/InputDataModel';
 import { NetworkService } from 'spinal-model-bmsnetwork';
-import { ConfigOrgan } from "../Utils/ConfigOrgan";
-import { SpinalContext, SpinalGraph, SpinalNode } from "spinal-env-viewer-graph-service";
+import type { ConfigOrgan } from '../Utils/ConfigOrgan';
+import { type SpinalContext, type SpinalGraph, type SpinalNode } from 'spinal-env-viewer-graph-service';
 import { ApiConnector } from './ApiConnector';
 export declare class GenerateData {
     nwService: NetworkService;
@@ -12,7 +12,7 @@ export declare class GenerateData {
     constructor(apiConnector: ApiConnector);
     init(graph: SpinalGraph, configOrgan: ConfigOrgan): Promise<void>;
     discoverData(context: SpinalContext | SpinalNode, networkName: string): Promise<void>;
-    updateUdevices(UDevices: any[], serialArray: any[], networkName?: string): Promise<void>;
+    updateUdevices(UDevices: InputDataDevice[], serialArray: any[], networkName?: string): Promise<void>;
     generateDataDevice(equipement: InputDataDevice, networkName?: string): Promise<InputDataDevice>;
     generateDataZone(zone: InputDataDevice): Promise<InputDataDevice>;
     updateData(obj: InputDataDevice): Promise<void>;

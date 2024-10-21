@@ -1,10 +1,10 @@
 /*
- * Copyright 2022 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -23,14 +23,13 @@
  */
 
 import {
-  InputDataDevice as idDevice,
+  type InputDataDevice as idDevice,
   SpinalBmsDevice,
 } from 'spinal-model-bmsnetwork';
-import { InputDataEndpoint } from './InputDataEndpoint';
-import { InputDataEndpointGroup } from './InputDataEndpointGroup';
+import type { InputDataEndpoint } from './InputDataEndpoint';
+import type { InputDataEndpointGroup } from './InputDataEndpointGroup';
 
 import { genUID } from '../../../Utils/genUID';
-
 
 /**
  * @property {string} id
@@ -55,7 +54,11 @@ export class InputDataDevice implements idDevice {
   public ubigreenReference: string;
   public positionReference: string;
   public address: string;
-  public children: (InputDataDevice | InputDataEndpoint | InputDataEndpointGroup)[];
+  public children: (
+    | InputDataDevice
+    | InputDataEndpoint
+    | InputDataEndpointGroup
+  )[];
   public nodeTypeName: string;
   /**
    *Creates an instance of InputDataDevice.
@@ -70,11 +73,11 @@ export class InputDataDevice implements idDevice {
     type: string = 'default device type',
     id: string = genUID('InputDataDevice'),
     path: string = 'default device path',
-    serial = "",
-    refInstallation: string = "",
-    customerReference: string = "",
-    ubigreenReference: string = "",
-    positionReference: string = "",
+    serial = '',
+    refInstallation: string = '',
+    customerReference: string = '',
+    ubigreenReference: string = '',
+    positionReference: string = '',
   ) {
     this.nodeTypeName = SpinalBmsDevice.nodeTypeName;
     this.id = id;

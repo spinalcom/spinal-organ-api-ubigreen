@@ -1,9 +1,8 @@
 export declare class TokenManager {
     private auth_url;
-    private token;
-    private expire_in;
-    private obtained_time;
+    tokenGenerator: AsyncGenerator<any, void, void>;
     constructor();
-    isExpired(): boolean;
+    isExpired(obtained_time: number, expire_in: number): boolean;
+    private generateToken;
     getToken(): Promise<string>;
 }

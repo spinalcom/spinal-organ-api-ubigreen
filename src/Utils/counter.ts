@@ -1,10 +1,10 @@
 /*
- * Copyright 2023 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -22,16 +22,17 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-import { SpinalContext, SpinalGraph, SpinalGraphService, SpinalNode } from "spinal-env-viewer-graph-service"
-import { ApiConnector } from "src/modules/ApiConnector";
+import {
+  SpinalGraphService,
+  type SpinalNode,
+} from 'spinal-env-viewer-graph-service';
+import { ApiConnector } from 'src/modules/ApiConnector';
 import spinalServiceTimeSeries from './spinalTimeSeries';
-import moment from 'moment';
-import fs = require('fs/promises');
-
-require("json5/lib/register");
-// get the config
-const config = require("../../config.json5");
-// const counterjson = require("../../counter.json5");
+import {
+  NETWORK_CONFIG_ORGAN_DESK,
+  NETWORK_HOST,
+  NETWORK_URL_SMARTROOM,
+} from '../config';
 
 interface IResponseUbigreenCounter {
   elements: IElementsItem[];
@@ -52,24 +53,28 @@ interface IPaging {
 
 async function networkSmartRoomCounter(apiConnector: ApiConnector) {
   try {
-    const context = SpinalGraphService.getContext(config.organDesk.contextName);
+    const context = SpinalGraphService.getContext(
+      NETWORK_CONFIG_ORGAN_DESK.contextName,
+    );
     const networks = await context.getChildren('hasBmsNetwork');
     let network: SpinalNode;
     for (const _network of networks) {
       if (_network.getName().get() === 'SmartRoom') {
-        network = _network
+        network = _network;
       }
     }
     const devices = await network.getChildren('hasBmsDevice');
-    const url: string = config.host + config.counter_url_smartroom;
+    const url: string = NETWORK_HOST + NETWORK_URL_SMARTROOM;
     for (let index = 1; index <= 3; index++) {
-      console.log("request", index);
+      console.log('request', index);
       const elements = [];
-      await waitSync()
-      const rep = await apiConnector.get<IResponseUbigreenCounter>(url + `?pageNumber=${index}`);
-      elements.push(...rep.data.elements)
+      await waitSync();
+      const rep = await apiConnector.get<IResponseUbigreenCounter>(
+        url + `?pageNumber=${index}`,
+      );
+      elements.push(...rep.data.elements);
 
-      let map = new Map<string, { date: number, value: number }[]>();
+      let map = new Map<string, { date: number; value: number }[]>();
       const date1 = new Date();
       date1.setHours(date1.getHours() - 3);
       const date2 = new Date();
@@ -80,42 +85,42 @@ async function networkSmartRoomCounter(apiConnector: ApiConnector) {
         if (element.dateBegin < _date2 && element.dateBegin > _date1) {
           let item = map.get(element.serial);
           if (item === undefined) {
-            item = []
+            item = [];
             map.set(element.serial, item);
           }
-          item.push({ date: element.dateBegin, value: element.counter })
+          item.push({ date: element.dateBegin, value: element.counter });
         }
       }
-      const promise = []
+      const promise = [];
       for (const [serial, arrayMap] of map) {
         const device = devices.find((_device) => {
-          return _device.getName().get() === serial
-        })
+          return _device.getName().get() === serial;
+        });
         if (device) {
           promise.push(insertTimeseries(device, arrayMap));
         }
       }
-      await Promise.all(promise)
+      await Promise.all(promise);
     }
-
-
-
   } catch (error) {
     console.error(error);
   }
-
 }
-export default networkSmartRoomCounter
+export default networkSmartRoomCounter;
 
-
-async function insertTimeseries(device: SpinalNode, arrayMap: { date: number; value: number; }[]) {
+async function insertTimeseries(
+  device: SpinalNode,
+  arrayMap: { date: number; value: number }[],
+) {
   const endpoints = await device.getChildren('hasBmsEndpoint');
   for (const endpoint of endpoints) {
     if (endpoint.getName().get() === ' Counter') {
       // @ts-ignore
       SpinalGraphService._addNode(endpoint);
       for (const { date, value } of arrayMap) {
-        var timeseries = await spinalServiceTimeSeries().getOrCreateTimeSeries(endpoint.getId().get());
+        var timeseries = await spinalServiceTimeSeries().getOrCreateTimeSeries(
+          endpoint.getId().get(),
+        );
         await timeseries.insert(value, date * 1000);
       }
     }
@@ -123,10 +128,10 @@ async function insertTimeseries(device: SpinalNode, arrayMap: { date: number; va
 }
 
 function waitSync() {
-  return new Promise<void>(resolve => {
+  return new Promise<void>((resolve) => {
     setTimeout(() => {
-      console.log("waitsync");
-      return resolve()
+      console.log('waitsync');
+      return resolve();
     }, 3000);
-  })
+  });
 }

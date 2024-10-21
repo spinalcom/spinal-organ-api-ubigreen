@@ -1,10 +1,10 @@
 /*
- * Copyright 2020 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -22,7 +22,7 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-import { SpinalServiceTimeseries } from 'spinal-model-timeseries'
+import { SpinalServiceTimeseries } from 'spinal-model-timeseries';
 
 let instance = null;
 function getInstance(): SpinalServiceTimeseries {
@@ -31,4 +31,4 @@ function getInstance(): SpinalServiceTimeseries {
   }
   return instance;
 }
-export default getInstance
+export default getInstance;

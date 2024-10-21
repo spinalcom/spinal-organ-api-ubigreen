@@ -5,8 +5,7 @@ const InputDataModel_1 = require("./InputData/InputDataModel/InputDataModel");
 const spinal_model_bmsnetwork_1 = require("spinal-model-bmsnetwork");
 const spinal_env_viewer_plugin_documentation_service_1 = require("spinal-env-viewer-plugin-documentation-service");
 const spinal_env_viewer_graph_service_1 = require("spinal-env-viewer-graph-service");
-require("json5/lib/register");
-const config = require("../../config.json5");
+const config_1 = require("../config");
 class GenerateData {
     constructor(apiConnector) {
         this.apiConnector = apiConnector;
@@ -33,19 +32,37 @@ class GenerateData {
                 serialArray.push(SDevice.getName().get());
             }
             if (networkName === 'SmartDesk') {
-                const url = config.host + config.refDevices_url_smartdesk + '?pageSize=1000&pageNumber=2';
-                const response = await this.apiConnector.get(url);
+                const url = config_1.NETWORK_HOST +
+                    config_1.NETWORK_REF_DEVICES_URL_SMARTDESK +
+                    '?pageSize=1000&pageNumber=';
+                const response = await this.apiConnector.get(`${url}1`);
                 UDevices = response.data.elements;
                 await this.updateUdevices(UDevices, serialArray, networkName);
+                if (response.data.paging.pageCount > 1) {
+                    for (let index = 2; index <= response.data.paging.pageCount; index++) {
+                        await this.waitSync();
+                        const rep = await this.apiConnector.get(`${url}${index}`);
+                        await this.updateUdevices(rep.data.elements, serialArray);
+                    }
+                }
             }
             else if (networkName === 'SmartRoom') {
-                const url = config.host + config.refDevices_url_smartroom + '?pageSize=1000&pageNumber=1';
-                const response = await this.apiConnector.get(url);
+                const url = config_1.NETWORK_HOST +
+                    config_1.NETWORK_REF_DEVICES_URL_SMARTROOM +
+                    '?pageSize=1000&pageNumber=';
+                const response = await this.apiConnector.get(`${url}1`);
                 UDevices = response.data.elements;
                 await this.updateUdevices(UDevices, serialArray, networkName);
+                if (response.data.paging.pageCount > 1) {
+                    for (let index = 2; index <= response.data.paging.pageCount; index++) {
+                        await this.waitSync();
+                        const rep = await this.apiConnector.get(`${url}${index}`);
+                        await this.updateUdevices(rep.data.elements, serialArray);
+                    }
+                }
             }
             else if (networkName === 'SmartFlow') {
-                const url = config.host + config.refZones_url_smartflow;
+                const url = config_1.NETWORK_HOST + config_1.NETWORK_REF_ZONES_URL_SMARTFLOW;
                 const response = await this.apiConnector.get(url);
                 UDevices = response.data.elements;
                 await this.updateUdevices(UDevices, serialArray, networkName);
@@ -57,10 +74,14 @@ class GenerateData {
     }
     async updateUdevices(UDevices, serialArray, networkName) {
         for (const UDevice of UDevices) {
-            if (networkName === "SmartFlow") {
+            if (networkName === 'SmartFlow') {
                 if (serialArray.includes(UDevice.refZone) === false) {
                     const device = await this.generateDataZone(UDevice);
                     await this.nwService.updateData(device);
+                    await this.updateAttr(device, networkName);
+                }
+                else {
+                    const device = await this.generateDataZone(UDevice);
                     await this.updateAttr(device, networkName);
                 }
             }
@@ -68,6 +89,10 @@ class GenerateData {
                 if (serialArray.includes(UDevice.serial) === false) {
                     const device = await this.generateDataDevice(UDevice, networkName);
                     await this.nwService.updateData(device);
+                    await this.updateAttr(device, networkName);
+                }
+                else {
+                    const device = await this.generateDataDevice(UDevice, networkName);
                     await this.updateAttr(device, networkName);
                 }
             }
@@ -79,7 +104,7 @@ class GenerateData {
         }
         const device = createFunc(equipement.serial, 'device', InputDataModel_1.InputDataDevice);
         const occupationEventType = new InputDataModel_1.InputDataEndpoint(` Occupation`, 0, '', InputDataModel_1.InputDataEndpointDataType.String, InputDataModel_1.InputDataEndpointType.Other, `DEVICE-${equipement.serial} Occupation`, '');
-        if (networkName === "SmartRoom") {
+        if (networkName === 'SmartRoom') {
             const counterEventType = new InputDataModel_1.InputDataEndpoint(` Counter`, 0, 'person', InputDataModel_1.InputDataEndpointDataType.String, InputDataModel_1.InputDataEndpointType.Other, `DEVICE-${equipement.serial} Counter`, '');
             const percentageEventType = new InputDataModel_1.InputDataEndpoint(` Percentage`, 0, '%', InputDataModel_1.InputDataEndpointDataType.String, InputDataModel_1.InputDataEndpointType.Other, `DEVICE-${equipement.serial} Percentage`, '');
             device.children.push(counterEventType);
@@ -102,7 +127,7 @@ class GenerateData {
     }
     async updateAttr(dataDevice, networkName) {
         var attrObj;
-        if (networkName === "SmartFlow") {
+        if (networkName === 'SmartFlow') {
             attrObj = {
                 refZone: dataDevice.refZone,
                 customerReference: dataDevice.customerReference,
@@ -115,7 +140,7 @@ class GenerateData {
                 refInstallation: dataDevice.refInstallation,
                 customerReference: dataDevice.customerReference,
                 ubigreenReference: dataDevice.ubigreenReference,
-                positionReference: dataDevice.positionReference
+                positionReference: dataDevice.positionReference,
             };
             const keys = Object.keys(attrObj);
             const context = spinal_env_viewer_graph_service_1.SpinalGraphService.getRealNode(this.contextId);
@@ -128,7 +153,7 @@ class GenerateData {
                 return false;
             });
             for (const node of nodes) {
-                const category = await spinal_env_viewer_plugin_documentation_service_1.serviceDocumentation.getCategoryByName(node, "default");
+                const category = await spinal_env_viewer_plugin_documentation_service_1.serviceDocumentation.getCategoryByName(node, 'default');
                 const attrs = await spinal_env_viewer_plugin_documentation_service_1.serviceDocumentation.getAttributesByCategory(node, category);
                 for (const key of keys) {
                     let found = false;
@@ -166,7 +191,8 @@ class GenerateData {
                         if (endpoint.getName().get() === ' Occupation') {
                             _endpoint = endpoint;
                         }
-                        else if (network.getName().get() === "SmartFlow" && endpoint.getName().get() === ' Counter') {
+                        else if (network.getName().get() === 'SmartFlow' &&
+                            endpoint.getName().get() === ' Counter') {
                             _endpoint = endpoint;
                         }
                     }
@@ -177,13 +203,14 @@ class GenerateData {
                         id: device.info.idNetwork.get(),
                         path: '',
                         serial: device.getName().get(),
-                        refInstallation: "",
-                        customerReference: "",
-                        ubigreenReference: "",
-                        positionReference: "",
-                        address: "",
+                        refInstallation: '',
+                        customerReference: '',
+                        ubigreenReference: '',
+                        positionReference: '',
+                        address: '',
                         nodeTypeName: spinal_model_bmsnetwork_1.SpinalBmsDevice.nodeTypeName,
-                        children: [{
+                        children: [
+                            {
                                 id: _endpoint.info.idNetwork.get(),
                                 typeId: '',
                                 name: _endpoint.getName().get(),
@@ -194,8 +221,9 @@ class GenerateData {
                                 type: elementEndpoint.type.get(),
                                 nodeTypeName: spinal_model_bmsnetwork_1.SpinalBmsEndpoint.nodeTypeName,
                                 timeseries: [],
-                                idx: 0
-                            }]
+                                idx: 0,
+                            },
+                        ],
                     };
                     return { objDevice, generateData };
                 }
@@ -203,7 +231,7 @@ class GenerateData {
         }
     }
     async waitSync() {
-        return new Promise(resolve => {
+        return new Promise((resolve) => {
             setTimeout(() => {
                 return resolve();
             }, 2000);

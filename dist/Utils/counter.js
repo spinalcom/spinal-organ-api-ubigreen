@@ -5,11 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const spinal_env_viewer_graph_service_1 = require("spinal-env-viewer-graph-service");
 const spinalTimeSeries_1 = __importDefault(require("./spinalTimeSeries"));
-require("json5/lib/register");
-const config = require("../../config.json5");
+const config_1 = require("../config");
 async function networkSmartRoomCounter(apiConnector) {
     try {
-        const context = spinal_env_viewer_graph_service_1.SpinalGraphService.getContext(config.organDesk.contextName);
+        const context = spinal_env_viewer_graph_service_1.SpinalGraphService.getContext(config_1.NETWORK_CONFIG_ORGAN_DESK.contextName);
         const networks = await context.getChildren('hasBmsNetwork');
         let network;
         for (const _network of networks) {
@@ -18,9 +17,9 @@ async function networkSmartRoomCounter(apiConnector) {
             }
         }
         const devices = await network.getChildren('hasBmsDevice');
-        const url = config.host + config.counter_url_smartroom;
+        const url = config_1.NETWORK_HOST + config_1.NETWORK_URL_SMARTROOM;
         for (let index = 1; index <= 3; index++) {
-            console.log("request", index);
+            console.log('request', index);
             const elements = [];
             await waitSync();
             const rep = await apiConnector.get(url + `?pageNumber=${index}`);
@@ -72,9 +71,9 @@ async function insertTimeseries(device, arrayMap) {
     }
 }
 function waitSync() {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
         setTimeout(() => {
-            console.log("waitsync");
+            console.log('waitsync');
             return resolve();
         }, 3000);
     });

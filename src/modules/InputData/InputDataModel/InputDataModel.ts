@@ -1,10 +1,10 @@
 /*
- * Copyright 2022 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -22,19 +22,11 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-import { InputDataDevice } from './InputDataDevice';
-import { InputDataEndpoint } from './InputDataEndpoint';
-import { InputDataEndpointGroup } from './InputDataEndpointGroup';
+export { InputDataDevice } from './InputDataDevice';
+export { InputDataEndpoint } from './InputDataEndpoint';
+export { InputDataEndpointGroup } from './InputDataEndpointGroup';
 
-import {
+export {
   InputDataEndpointDataType,
   InputDataEndpointType,
 } from 'spinal-model-bmsnetwork';
-
-export {
-  InputDataDevice,
-  InputDataEndpoint,
-  InputDataEndpointType,
-  InputDataEndpointGroup,
-  InputDataEndpointDataType,
-};

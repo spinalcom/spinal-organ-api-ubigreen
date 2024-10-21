@@ -1,10 +1,10 @@
 /*
- * Copyright 2022 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -22,45 +22,54 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-import axios, { AxiosRequestConfig } from "axios";
-const config = require("../../config.json5");
-import request from 'request';
-const querystring = require('querystring');
+import axios from 'axios';
+import {
+  NETWORK_AUTH_URL_SMARTDESK,
+  NETWORK_GRANT_TYPE,
+  NETWORK_PASSWORD,
+  NETWORK_USERNAME,
+} from '../config';
 
+import { stringify } from 'querystring';
 
 export class TokenManager {
-  private auth_url: string;
-  private token: string;
-  private expire_in: number;
-  private obtained_time: number;
+  private auth_url: string = NETWORK_AUTH_URL_SMARTDESK;
 
+  tokenGenerator = this.generateToken();
 
-  constructor() {
-    this.token = null
-    this.auth_url = config.auth_url_smartdesk;
+  constructor() {}
+
+  public isExpired(obtained_time: number, expire_in: number) {
+    return Date.now() - obtained_time > expire_in;
   }
 
-  public isExpired() {
-    const now = new Date().getTime();
-    return now - this.obtained_time > this.expire_in;
+  private async *generateToken(): AsyncGenerator<any, void, void> {
+    while (true) {
+      try {
+        const response = await axios.post(
+          this.auth_url,
+          stringify({
+            username: NETWORK_USERNAME,
+            password: NETWORK_PASSWORD,
+            grant_type: NETWORK_GRANT_TYPE,
+          }),
+        );
+        const token = response.data.access_token;
+        const expire_in = response.data.expires_in * 1000; // convert to ms
+        const obtained_time = new Date().getTime();
+        while (!this.isExpired(obtained_time, expire_in)) {
+          yield token;
+        }
+      } catch (error) {
+        console.log('Error while generating token');
+        console.error(error);
+        process.exit(-1);
+      }
+    }
   }
 
   // Return token if exist or isn't expired, else create a new one
   public async getToken(): Promise<string> {
-    try {
-      if (this.token && !this.isExpired()) {
-        return this.token;
-      }
-      const response = await axios.post(this.auth_url,
-        querystring.stringify({ username: config.username, password: config.password, grant_type: config.grant_type }));
-      this.token = response.data.access_token;
-      this.expire_in = response.data.expires_in * 1000; // convert to ms
-      this.obtained_time = new Date().getTime();
-      return this.token;
-    } catch (error) {
-      console.error(error)
-    }
-
-
+    return (await this.tokenGenerator.next()).value;
   }
 }

@@ -5,31 +5,40 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TokenManager = void 0;
 const axios_1 = __importDefault(require("axios"));
-const config = require("../../config.json5");
-const querystring = require('querystring');
+const config_1 = require("../config");
+const querystring_1 = require("querystring");
 class TokenManager {
     constructor() {
-        this.token = null;
-        this.auth_url = config.auth_url_smartdesk;
+        this.auth_url = config_1.NETWORK_AUTH_URL_SMARTDESK;
+        this.tokenGenerator = this.generateToken();
     }
-    isExpired() {
-        const now = new Date().getTime();
-        return now - this.obtained_time > this.expire_in;
+    isExpired(obtained_time, expire_in) {
+        return Date.now() - obtained_time > expire_in;
+    }
+    async *generateToken() {
+        while (true) {
+            try {
+                const response = await axios_1.default.post(this.auth_url, (0, querystring_1.stringify)({
+                    username: config_1.NETWORK_USERNAME,
+                    password: config_1.NETWORK_PASSWORD,
+                    grant_type: config_1.NETWORK_GRANT_TYPE,
+                }));
+                const token = response.data.access_token;
+                const expire_in = response.data.expires_in * 1000;
+                const obtained_time = new Date().getTime();
+                while (!this.isExpired(obtained_time, expire_in)) {
+                    yield token;
+                }
+            }
+            catch (error) {
+                console.log('Error while generating token');
+                console.error(error);
+                process.exit(-1);
+            }
+        }
     }
     async getToken() {
-        try {
-            if (this.token && !this.isExpired()) {
-                return this.token;
-            }
-            const response = await axios_1.default.post(this.auth_url, querystring.stringify({ username: config.username, password: config.password, grant_type: config.grant_type }));
-            this.token = response.data.access_token;
-            this.expire_in = response.data.expires_in * 1000;
-            this.obtained_time = new Date().getTime();
-            return this.token;
-        }
-        catch (error) {
-            console.error(error);
-        }
+        return (await this.tokenGenerator.next()).value;
     }
 }
 exports.TokenManager = TokenManager;

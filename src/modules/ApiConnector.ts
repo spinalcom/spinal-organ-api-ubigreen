@@ -1,10 +1,10 @@
 /*
- * Copyright 2022 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -22,10 +22,8 @@
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
 
-import axios, { AxiosRequestConfig } from "axios";
-import { TokenManager } from "./TokenManager";
-const querystring = require('querystring');
-
+import axios from 'axios';
+import { TokenManager } from './TokenManager';
 
 export class ApiConnector {
   private TokenManager: TokenManager;
@@ -36,10 +34,10 @@ export class ApiConnector {
   public async getConfig() {
     return {
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: "Bearer " + await this.TokenManager.getToken()
-      }
-    }
+        'Content-Type': 'application/x-www-form-urlencoded',
+        Authorization: 'Bearer ' + (await this.TokenManager.getToken()),
+      },
+    };
   }
 
   /**
@@ -63,5 +61,4 @@ export class ApiConnector {
     const config = await this.getConfig();
     return axios.post(url, data, config);
   }
-
 }

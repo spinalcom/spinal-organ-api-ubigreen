@@ -4,7 +4,7 @@ exports.InputDataEndpoint = void 0;
 const spinal_model_bmsnetwork_1 = require("spinal-model-bmsnetwork");
 const genUID_1 = require("../../../Utils/genUID");
 class InputDataEndpoint {
-    constructor(name = "default endpoint name", currentValue = 0, unit = "unit", dataType = spinal_model_bmsnetwork_1.InputDataEndpointDataType.Integer, type = spinal_model_bmsnetwork_1.InputDataEndpointType.Other, id = (0, genUID_1.genUID)("InputDataEndpoint"), path = "default endpoint path") {
+    constructor(name = 'default endpoint name', currentValue = 0, unit = 'unit', dataType = spinal_model_bmsnetwork_1.InputDataEndpointDataType.Integer, type = spinal_model_bmsnetwork_1.InputDataEndpointType.Other, id = (0, genUID_1.genUID)('InputDataEndpoint'), path = 'default endpoint path') {
         this.nodeTypeName = spinal_model_bmsnetwork_1.SpinalBmsEndpoint.nodeTypeName;
         this.id = id;
         this.name = name;

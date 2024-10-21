@@ -1,8 +1,9 @@
-import { SpinalGraph } from 'spinal-model-graph';
+import { FileSystem } from 'spinal-core-connectorjs_type';
+import type { SpinalGraph } from 'spinal-model-graph';
 declare class SpinalAPIMiddleware {
     static instance: SpinalAPIMiddleware;
     loadedPtr: Map<number, any>;
-    conn: spinal.FileSystem;
+    conn: FileSystem;
     iteratorGraph: AsyncGenerator<SpinalGraph<any>, never, unknown>;
     static getInstance(): SpinalAPIMiddleware;
     constructor();

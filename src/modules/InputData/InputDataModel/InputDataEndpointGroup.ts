@@ -1,10 +1,10 @@
 /*
- * Copyright 2022 SpinalCom - www.spinalcom.com
+ * Copyright 2024 SpinalCom - www.spinalcom.com
  *
  * This file is part of SpinalCore.
  *
  * Please read all of the following terms and conditions
- * of the Free Software license Agreement ("Agreement")
+ * of the Software license Agreement ("Agreement")
  * carefully.
  *
  * This Agreement is a legally binding contract between
@@ -23,13 +23,13 @@
  */
 
 import {
-  InputDataEndpointGroup as idEndpointGroup,
+  type InputDataEndpointGroup as idEndpointGroup,
   SpinalBmsEndpointGroup,
 } from 'spinal-model-bmsnetwork';
 
 import { genUID } from '../../../Utils/genUID';
 
-import { InputDataEndpoint } from './InputDataEndpoint';
+import type { InputDataEndpoint } from './InputDataEndpoint';
 
 /**
  * @property {string} id
@@ -47,7 +47,7 @@ export class InputDataEndpointGroup implements idEndpointGroup {
   public name: string;
   public type: string;
   public path: string;
-  public children: (InputDataEndpoint)[];
+  public children: InputDataEndpoint[];
   public nodeTypeName: string;
 
   /**

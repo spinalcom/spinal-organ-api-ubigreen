@@ -25,6 +25,7 @@
     "@datastructures-js/priority-queue": "^5.1.1",
     "@microsoft/signalr": "^6.0.10",
     "axios": "^0.27.2",
+    "axios-debug-log": "^1.0.0",
     "big-json": "^3.1.0",
     "btoa": "^1.2.1",
     "dotenv": "^16.0.3",

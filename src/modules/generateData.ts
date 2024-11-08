@@ -96,6 +96,7 @@ export class GenerateData {
     context: SpinalContext | SpinalNode,
     networkName: string,
   ) {
+    console.log('Discover data for network: ', networkName);
     try {
       let UDevices = [];
       let SDevices: SpinalNode[];
@@ -157,6 +158,7 @@ export class GenerateData {
     } catch (error) {
       console.error(error);
     }
+    console.log('Discover data done');
   }
 
   public async updateUdevices(

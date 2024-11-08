@@ -21,7 +21,7 @@
  * with this file. If not, see
  * <http://resources.spinalcom.com/licenses.pdf>.
  */
-
+require('axios-debug-log/enable');
 import signalR from './signalR/signalR';
 import { GenerateData } from './modules/generateData';
 import { ApiConnector } from './modules/ApiConnector';
@@ -66,9 +66,9 @@ async function run_discover(obj: IDataConfig) {
   if (lastRun) {
     const now = Date.now();
     lastRun += 1000 * 60 * 60;
-    const diff = now - lastRun;
-    if (diff < 1000 * 60 * 60) {
-      console.log('Last run was less than an hour ago, wait %s s.', diff);
+    const diff = lastRun - now;
+    if (diff > 0) {
+      console.log('Last run was less than an hour ago, wait %s s.', diff / 1000);
       await new Promise((resolve) => setTimeout(resolve, diff));
     }
   }
@@ -77,6 +77,9 @@ async function run_discover(obj: IDataConfig) {
   const ubigreenContexte = await obj.graph.getContext(
     NETWORK_CONFIG_ORGAN_DESK.contextName,
   );
+  if (!ubigreenContexte) {
+    throw new Error('Cannot find ubigreen Contexte of name: ' + NETWORK_CONFIG_ORGAN_DESK.contextName);
+  }
   await obj.generateDataSmartdesk.discoverData(
     ubigreenContexte,
     NETWORK_CONFIG_ORGAN_DESK.networkName,
@@ -91,12 +94,13 @@ async function run_discover(obj: IDataConfig) {
     ubigreenContexte,
     NETWORK_CONFIG_ORGAN_FLOW.networkName,
   );
+  console.log('All discover done');
   // // reset data for test purpose
-  await signalR([
-    obj.generateDataSmartdesk,
-    obj.generateDataSmartroom,
-    obj.generateDataSmartflow,
-  ]);
+  // await signalR([
+  //   obj.generateDataSmartdesk,
+  //   obj.generateDataSmartroom,
+  //   obj.generateDataSmartflow,
+  // ]);
 }
 
 async function init(): Promise<IDataConfig> {

@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+require('axios-debug-log/enable');
 const signalR_1 = __importDefault(require("./signalR/signalR"));
 const generateData_1 = require("./modules/generateData");
 const ApiConnector_1 = require("./modules/ApiConnector");
@@ -26,24 +27,23 @@ async function run_discover(obj) {
     if (lastRun) {
         const now = Date.now();
         lastRun += 1000 * 60 * 60;
-        const diff = now - lastRun;
-        if (diff < 1000 * 60 * 60) {
-            console.log('Last run was less than an hour ago, wait %s s.', diff);
+        const diff = lastRun - now;
+        if (diff > 0) {
+            console.log('Last run was less than an hour ago, wait %s s.', diff / 1000);
             await new Promise((resolve) => setTimeout(resolve, diff));
         }
     }
     (0, LastRunDiscover_1.setLastRunDiscover)();
     const ubigreenContexte = await obj.graph.getContext(config_1.NETWORK_CONFIG_ORGAN_DESK.contextName);
+    if (!ubigreenContexte) {
+        throw new Error('Cannot find ubigreen Contexte of name: ' + config_1.NETWORK_CONFIG_ORGAN_DESK.contextName);
+    }
     await obj.generateDataSmartdesk.discoverData(ubigreenContexte, config_1.NETWORK_CONFIG_ORGAN_DESK.networkName);
     await obj.generateDataSmartdesk.waitSync();
     await obj.generateDataSmartroom.discoverData(ubigreenContexte, config_1.NETWORK_CONFIG_ORGAN_ROOM.networkName);
     await obj.generateDataSmartroom.waitSync();
     await obj.generateDataSmartflow.discoverData(ubigreenContexte, config_1.NETWORK_CONFIG_ORGAN_FLOW.networkName);
-    await (0, signalR_1.default)([
-        obj.generateDataSmartdesk,
-        obj.generateDataSmartroom,
-        obj.generateDataSmartflow,
-    ]);
+    console.log('All discover done');
 }
 async function init() {
     const spinalMiddelware = new spinalMiddelware_1.default();

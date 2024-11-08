@@ -124,16 +124,17 @@ function tryImportJson5Data() {
   setUp('NETWORK_BASE_URL_SMARTDESK', config.base_url_smartdesk);
   setUp('NETWORK_AUTH_URL_SOCKET', config.auth_url_socket);
   setUp('NETWORK_HUB_NAME', config.hub_name);
+  setUp('NETWORK_HOST', config.host);
   setUp('NETWORK_ORGAN_DESK_CONTEXT_NAME', config.organDesk?.contextName);
   setUp('NETWORK_ORGAN_DESK_CONTEXT_TYPE', config.organDesk?.contextType);
-  setUp('NETWORK_ORGAN_DESK_NETWORK_NAME', config.organDesk?.networkType);
-  setUp('NETWORK_ORGAN_DESK_NETWORK_TYPE', config.organDesk?.networkName);
+  setUp('NETWORK_ORGAN_DESK_NETWORK_NAME', config.organDesk?.networkName);
+  setUp('NETWORK_ORGAN_DESK_NETWORK_TYPE', config.organDesk?.networkType);
   setUp('NETWORK_ORGAN_ROOM_CONTEXT_NAME', config.organRoom?.contextName);
   setUp('NETWORK_ORGAN_ROOM_CONTEXT_TYPE', config.organRoom?.contextType);
-  setUp('NETWORK_ORGAN_ROOM_NETWORK_NAME', config.organRoom?.networkType);
-  setUp('NETWORK_ORGAN_ROOM_NETWORK_TYPE', config.organRoom?.networkName);
+  setUp('NETWORK_ORGAN_ROOM_NETWORK_NAME', config.organRoom?.networkName);
+  setUp('NETWORK_ORGAN_ROOM_NETWORK_TYPE', config.organRoom?.networkType);
   setUp('NETWORK_ORGAN_FLOW_CONTEXT_NAME', config.organFlow?.contextName);
   setUp('NETWORK_ORGAN_FLOW_CONTEXT_TYPE', config.organFlow?.contextType);
-  setUp('NETWORK_ORGAN_FLOW_NETWORK_NAME', config.organFlow?.networkType);
-  setUp('NETWORK_ORGAN_FLOW_NETWORK_TYPE', config.organFlow?.networkName);
+  setUp('NETWORK_ORGAN_FLOW_NETWORK_NAME', config.organFlow?.networkName);
+  setUp('NETWORK_ORGAN_FLOW_NETWORK_TYPE', config.organFlow?.networkType);
 }

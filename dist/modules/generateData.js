@@ -18,6 +18,7 @@ class GenerateData {
         this.networkName = configOrgan.networkName;
     }
     async discoverData(context, networkName) {
+        console.log('Discover data for network: ', networkName);
         try {
             let UDevices = [];
             let SDevices;
@@ -71,6 +72,7 @@ class GenerateData {
         catch (error) {
             console.error(error);
         }
+        console.log('Discover data done');
     }
     async updateUdevices(UDevices, serialArray, networkName) {
         for (const UDevice of UDevices) {

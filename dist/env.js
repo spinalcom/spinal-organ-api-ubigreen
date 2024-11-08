@@ -99,17 +99,18 @@ function tryImportJson5Data() {
     setUp('NETWORK_BASE_URL_SMARTDESK', config.base_url_smartdesk);
     setUp('NETWORK_AUTH_URL_SOCKET', config.auth_url_socket);
     setUp('NETWORK_HUB_NAME', config.hub_name);
+    setUp('NETWORK_HOST', config.host);
     setUp('NETWORK_ORGAN_DESK_CONTEXT_NAME', (_f = config.organDesk) === null || _f === void 0 ? void 0 : _f.contextName);
     setUp('NETWORK_ORGAN_DESK_CONTEXT_TYPE', (_g = config.organDesk) === null || _g === void 0 ? void 0 : _g.contextType);
-    setUp('NETWORK_ORGAN_DESK_NETWORK_NAME', (_h = config.organDesk) === null || _h === void 0 ? void 0 : _h.networkType);
-    setUp('NETWORK_ORGAN_DESK_NETWORK_TYPE', (_j = config.organDesk) === null || _j === void 0 ? void 0 : _j.networkName);
+    setUp('NETWORK_ORGAN_DESK_NETWORK_NAME', (_h = config.organDesk) === null || _h === void 0 ? void 0 : _h.networkName);
+    setUp('NETWORK_ORGAN_DESK_NETWORK_TYPE', (_j = config.organDesk) === null || _j === void 0 ? void 0 : _j.networkType);
     setUp('NETWORK_ORGAN_ROOM_CONTEXT_NAME', (_k = config.organRoom) === null || _k === void 0 ? void 0 : _k.contextName);
     setUp('NETWORK_ORGAN_ROOM_CONTEXT_TYPE', (_l = config.organRoom) === null || _l === void 0 ? void 0 : _l.contextType);
-    setUp('NETWORK_ORGAN_ROOM_NETWORK_NAME', (_m = config.organRoom) === null || _m === void 0 ? void 0 : _m.networkType);
-    setUp('NETWORK_ORGAN_ROOM_NETWORK_TYPE', (_o = config.organRoom) === null || _o === void 0 ? void 0 : _o.networkName);
+    setUp('NETWORK_ORGAN_ROOM_NETWORK_NAME', (_m = config.organRoom) === null || _m === void 0 ? void 0 : _m.networkName);
+    setUp('NETWORK_ORGAN_ROOM_NETWORK_TYPE', (_o = config.organRoom) === null || _o === void 0 ? void 0 : _o.networkType);
     setUp('NETWORK_ORGAN_FLOW_CONTEXT_NAME', (_p = config.organFlow) === null || _p === void 0 ? void 0 : _p.contextName);
     setUp('NETWORK_ORGAN_FLOW_CONTEXT_TYPE', (_q = config.organFlow) === null || _q === void 0 ? void 0 : _q.contextType);
-    setUp('NETWORK_ORGAN_FLOW_NETWORK_NAME', (_r = config.organFlow) === null || _r === void 0 ? void 0 : _r.networkType);
-    setUp('NETWORK_ORGAN_FLOW_NETWORK_TYPE', (_s = config.organFlow) === null || _s === void 0 ? void 0 : _s.networkName);
+    setUp('NETWORK_ORGAN_FLOW_NETWORK_NAME', (_r = config.organFlow) === null || _r === void 0 ? void 0 : _r.networkName);
+    setUp('NETWORK_ORGAN_FLOW_NETWORK_TYPE', (_s = config.organFlow) === null || _s === void 0 ? void 0 : _s.networkType);
 }
 //# sourceMappingURL=env.js.map

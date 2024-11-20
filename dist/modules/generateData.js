@@ -157,17 +157,27 @@ class GenerateData {
             for (const node of nodes) {
                 const category = await spinal_env_viewer_plugin_documentation_service_1.serviceDocumentation.getCategoryByName(node, 'default');
                 const attrs = await spinal_env_viewer_plugin_documentation_service_1.serviceDocumentation.getAttributesByCategory(node, category);
+                const attrModif = [];
                 for (const key of keys) {
                     let found = false;
                     for (const attr of attrs) {
                         if (key === attr.label.get()) {
                             found = true;
+                            if (attr.value.get() != attrObj[key]) {
+                                attrModif.push({ label: attr.label.get(), oldValue: attr.value.get(), newValue: attrObj[key] });
+                            }
                             attr.value.set(attrObj[key]);
                             break;
                         }
                     }
                     if (found === false) {
                         spinal_env_viewer_plugin_documentation_service_1.serviceDocumentation.addAttributeByCategory(node, category, key, attrObj[key]);
+                    }
+                }
+                if (attrModif.length > 0) {
+                    console.log(`Node updated => ${node.info.name.get()} | ${node._server_id}`);
+                    for (let i = 0; i < attrModif.length; i++) {
+                        console.log(`Attribute updated => ${attrModif[i].label} | ${attrModif[i].oldValue} => ${attrModif[i].newValue}`);
                     }
                 }
             }

@@ -334,11 +334,17 @@ export class GenerateData {
           node,
           category,
         );
+        // console.log(`Node updated => ${node.info.name.get()} | ${node._server_id}`);
+        const attrModif = [];
+
         for (const key of keys) {
           let found = false;
           for (const attr of attrs) {
             if (key === attr.label.get()) {
               found = true;
+              if (attr.value.get() != attrObj[key]) {
+                attrModif.push({ label: attr.label.get(), oldValue: attr.value.get(), newValue: attrObj[key] });
+              }
               attr.value.set(attrObj[key]);
               break;
             }
@@ -352,9 +358,16 @@ export class GenerateData {
             );
           }
         }
+        if (attrModif.length > 0) {
+          console.log(`Node updated => ${node.info.name.get()} | ${node._server_id}`);
+          for (let i = 0; i < attrModif.length; i++) {
+            console.log(`Attribute updated => ${attrModif[i].label} | ${attrModif[i].oldValue} => ${attrModif[i].newValue}`);
+          }
+        }
       }
     }
   }
+  
   static async getDeviceBySerialOrByRefZone(
     serial: string,
     newvalue: number,
